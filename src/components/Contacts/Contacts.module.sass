@@ -1,0 +1,70 @@
+@import '../variables'
+
+.contacts
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #f6f7fd
+  padding: 2% 0
+
+.container
+  width: 80%
+  height: 100%
+  display: flex
+  align-items: center
+
+.contactsMainBlock
+  width: 100%
+  height: 90%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.contactsTitle
+  @include blocksTitle
+
+.contactsContentBlock
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 10%
+
+.contactsBlock
+  width: 40%
+
+.contactsContentElement
+  display: flex
+  line-height: 3
+  font-size: 1vw
+  div:first-child
+    margin-right: 2%
+    font-weight: 600
+
+.contactsForm
+  width: 60%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.contactsItem
+  height: 8vh
+  @include contactElement
+
+.contactsItemTextarea
+  height: 14vh
+  @include contactElement
+
+.contactsButton
+  margin-top: 5%
+  @include button
+
+.contactsButton:before
+  @include buttonBefore
+
+.contactsButton:hover
+  @include buttonHover
+
+.contactsButton:hover:before
+  @include buttonHoverBefore

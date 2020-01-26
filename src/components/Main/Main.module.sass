@@ -1,0 +1,64 @@
+.main
+  background-image: url('../../images/background3.jpg')
+  background-size: cover
+  height: 100vh
+  display: flex
+  justify-content: center
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  width: 80%
+  height: 90%
+  text-align: center
+
+.mainDescription
+  color: white
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.mainName
+  font-size: 4vw
+  font-family: 'Open Sans', sans-serif
+  font-weight: 500
+  @media screen and (max-width: 530px)
+    font-size: 6.5vw
+  span
+    color: darkorange
+
+.mainSpecialize
+  width: 100%
+  font-size: 2.5vw
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  display: block
+  @media screen and (max-width: 530px)
+    font-size: 5.5vw
+  span
+    font-weight: 400
+
+.mainPhoto
+  width: 200px
+  height: 200px
+  border: 8px solid rgba(255,255,255,.5)
+  border-radius: 50%
+  background-image: url('../../images/myPhoto.jpg')
+  background-position: center
+  background-size: cover
+  margin-bottom: 10%
+
+@keyframes blink
+  0%
+    background-color: white
+  49%
+    background-color: white
+  50%
+    background-color: transparent
+  99%
+    background-color: transparent
+  100%
+    background-color: white

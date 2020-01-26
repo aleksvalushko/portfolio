@@ -1,0 +1,37 @@
+@import '../variables'
+
+.articles
+  height: 35vh
+  background-color: #f6f7fd
+  display: flex
+  justify-content: center
+
+.container
+  width: 80%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.articlesMainBlock
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.articlesTitle
+  font-size: 1.5vw
+  font-weight: 600
+  margin-bottom: 10%
+
+.articlesButton
+  @include button
+
+.articlesButton:before
+  @include buttonBefore
+
+.articlesButton:hover
+  @include buttonHover
+
+.articlesButton:hover:before
+  @include buttonHoverBefore

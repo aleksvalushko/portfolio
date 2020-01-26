@@ -1,0 +1,119 @@
+.contacts {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f7fd;
+  padding: 2% 0; }
+
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.contactsMainBlock {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.contactsTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 13%;
+  font-size: 3.5vw;
+  border-left: 6px solid darkorange;
+  padding-left: 1%;
+  font-weight: 600;
+  margin-bottom: 5%; }
+  .contactsTitle span {
+    font-size: 1.2vw;
+    font-weight: 300; }
+
+.contactsContentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10%; }
+
+.contactsBlock {
+  width: 40%; }
+
+.contactsContentElement {
+  display: flex;
+  line-height: 3;
+  font-size: 1vw; }
+  .contactsContentElement div:first-child {
+    margin-right: 2%;
+    font-weight: 600; }
+
+.contactsForm {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.contactsItem {
+  height: 8vh;
+  width: 100%;
+  margin: 1%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #f6f7fd;
+  outline: none;
+  font-size: 1.2vw;
+  color: black; }
+
+.contactsItemTextarea {
+  height: 14vh;
+  width: 100%;
+  margin: 1%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #f6f7fd;
+  outline: none;
+  font-size: 1.2vw;
+  color: black; }
+
+.contactsButton {
+  margin-top: 5%;
+  background: #E3872D;
+  border: none;
+  border-radius: 3px;
+  width: 11vw;
+  height: 6vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 0;
+  position: relative; }
+
+.contactsButton:before {
+  content: "";
+  background: black;
+  width: 17vw;
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: 0.5s ease-in-out; }
+
+.contactsButton:hover {
+  color: #fff; }
+
+.contactsButton:hover:before {
+  left: -20px;
+  transition: 0.5s ease-in-out; }
+
+/*# sourceMappingURL=Contacts.module.css.map */

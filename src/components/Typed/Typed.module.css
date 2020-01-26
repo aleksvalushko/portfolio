@@ -1,0 +1,138 @@
+.aboutMe {
+  max-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5%; }
+
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.aboutMeTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 13%;
+  font-size: 3.5vw;
+  border-left: 6px solid darkorange;
+  padding-left: 1%;
+  font-weight: 600;
+  margin-bottom: 5%;
+  margin-bottom: 10%; }
+  .aboutMeTitle span {
+    font-size: 1.2vw;
+    font-weight: 300; }
+
+.aboutMeDescriptionBlock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.tilt {
+  position: relative;
+  margin-right: 20%; }
+
+.aboutMePhoto {
+  width: 100%;
+  margin-right: 5%;
+  position: relative; }
+  .aboutMePhoto img {
+    width: 190%;
+    height: 210%; }
+
+.aboutMeDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; }
+
+.aboutMeDescriptionTitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.8vw; }
+  .aboutMeDescriptionTitle span {
+    color: darkorange; }
+
+.aboutMeDescriptionText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  font-size: 1vw;
+  margin-bottom: 5%; }
+
+.aboutMeInformation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  font-size: 1vw; }
+
+.aboutMeInformationBlock {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%; }
+
+.aboutMeInformationElement1 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  width: 40%; }
+
+.aboutMeInformationElement2 {
+  width: 50%; }
+
+.aboutMeButtons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8%; }
+
+.aboutMeDownloadCVButton, .aboutMeSendMessageButton {
+  background: #E3872D;
+  border: none;
+  border-radius: 3px;
+  width: 11vw;
+  height: 6vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  height: 8vh; }
+
+.aboutMeDownloadCVButton:before, .aboutMeSendMessageButton:before {
+  content: "";
+  background: black;
+  width: 17vw;
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+  height: 8vh; }
+
+.aboutMeDownloadCVButton:hover, .aboutMeSendMessageButton:hover {
+  color: #fff; }
+
+.aboutMeDownloadCVButton:hover:before, .aboutMeSendMessageButton:hover:before {
+  left: -20px;
+  transition: 0.5s ease-in-out;
+  left: -28px; }
+
+/*# sourceMappingURL=Typed.module.css.map */

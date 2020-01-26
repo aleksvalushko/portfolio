@@ -1,0 +1,67 @@
+.header {
+  height: 8vh;
+  background-color: #041230;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  z-index: 1; }
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.nav {
+  width: 45%;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 1100px) {
+    .nav {
+      width: 50%; } }
+  @media screen and (max-width: 900px) {
+    .nav {
+      width: 60%; } }
+  @media screen and (max-width: 750px) {
+    .nav {
+      width: 70%; } }
+  @media screen and (max-width: 640px) {
+    .nav {
+      width: 80%; } }
+  @media screen and (max-width: 550px) {
+    .nav {
+      width: 90%; } }
+  @media screen and (max-width: 500px) {
+    .nav {
+      width: 100%; } }
+
+.link {
+  font-size: 1.4vw;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase; }
+  @media screen and (max-width: 1100px) {
+    .link {
+      font-size: 1.6vw; } }
+  @media screen and (max-width: 900px) {
+    .link {
+      font-size: 1.8vw; } }
+  @media screen and (max-width: 750px) {
+    .link {
+      font-size: 2vw; } }
+  @media screen and (max-width: 640px) {
+    .link {
+      font-size: 2.2vw; } }
+  @media screen and (max-width: 550px) {
+    .link {
+      font-size: 2.6vw; } }
+  @media screen and (max-width: 500px) {
+    .link {
+      font-size: 3vw; } }
+
+a:hover {
+  color: #E3872D; }
+
+/*# sourceMappingURL=Header.module.css.map */

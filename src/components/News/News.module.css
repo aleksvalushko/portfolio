@@ -1,0 +1,115 @@
+.news {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0; }
+
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.newsMainBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.newsTitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 13%;
+  font-size: 3.5vw;
+  border-left: 6px solid darkorange;
+  padding-left: 1%;
+  font-weight: 600;
+  margin-bottom: 5%;
+  margin-bottom: 10%; }
+  .newsTitle span {
+    font-size: 1.2vw;
+    font-weight: 300; }
+
+.newsItems {
+  display: flex;
+  justify-content: space-between; }
+
+.newsItem {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f7fd; }
+
+.newsImage {
+  width: 100%; }
+  .newsImage img {
+    width: 100%; }
+
+.newsBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 5%; }
+
+.newsItemTitle {
+  margin-bottom: 5%; }
+  .newsItemTitle a {
+    text-decoration: none;
+    color: #041230;
+    font-size: 1.5vw;
+    font-weight: 600;
+    vertical-align: baseline;
+    outline: none;
+    cursor: pointer; }
+  .newsItemTitle a:hover {
+    color: #E3872D;
+    transition: all 0.3s ease; }
+
+.newsText {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  font-size: 1vw;
+  line-height: 1.5; }
+  .newsText div {
+    column-width: 15vw;
+    height: 100%; }
+
+.newsButton {
+  background: #E3872D;
+  border: none;
+  border-radius: 3px;
+  width: 11vw;
+  height: 6vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 0;
+  position: relative; }
+
+.newsButton:before {
+  content: "";
+  background: black;
+  width: 17vw;
+  height: 8vh;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: 0.5s ease-in-out; }
+
+.newsButton:hover {
+  color: #fff; }
+
+.newsButton:hover:before {
+  left: -20px;
+  transition: 0.5s ease-in-out; }
+
+/*# sourceMappingURL=News.module.css.map */
