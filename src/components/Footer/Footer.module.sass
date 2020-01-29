@@ -1,3 +1,5 @@
+@import '../variables'
+
 .footer
   height: 30vh
   display: flex
@@ -29,4 +31,25 @@
     width: 45px
     height: 45px
 
-  
+.anchor
+  @include button
+  width: 40px
+  height: 40px
+  display: flex
+  justify-content: center
+  position: fixed
+  z-index: 100
+  top: 40vw
+  left: 92vw
+  img
+    width: 20%
+
+.anchor:before
+  @include buttonBefore
+
+.anchor:hover
+  @include buttonHover
+  border: 1px solid #3A3B39
+
+.anchor:hover:before
+  @include buttonHoverBefore

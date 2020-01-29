@@ -15,7 +15,7 @@ let stateReducer = {
             lastName: 'ВАЛУШКО',
             specialize: {
                 firstElement: 'Я',
-                secondElement: ['front-end разработчик', 'Java Script разработчик', 'Верстальщик']
+                secondElement: ['верстальщик', 'java script разработчик', 'front-end разработчик']
             }
         },
         aboutMe: {
@@ -24,7 +24,7 @@ let stateReducer = {
             photo: aboutMePhoto,
             descriptionTitle: {
                 firstElement: 'Я Алексей Валушко и я ',
-                secondElement: 'front-end разработчик'
+                secondElement: ['верстальщик', 'java script разработчик', 'front-end разработчик']
             },
             descriptionText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci aliquid\n' +
                 '                            aperiam\n' +
@@ -47,10 +47,6 @@ let stateReducer = {
                         {
                             id: 3,
                             title: 'Образование:'
-                        },
-                        {
-                            id: 4,
-                            title: 'ВУЗ:'
                         }
                     ],
                 informationTitle2: [
@@ -64,15 +60,7 @@ let stateReducer = {
                     },
                     {
                         id: 3,
-                        title: 'Почта:'
-                    },
-                    {
-                        id: 4,
-                        title: 'Веб-сайт:'
-                    },
-                    {
-                        id: 5,
-                        title: 'Телефон:'
+                        title: 'ВУЗ:'
                     }
                 ],
                 informationText1:
@@ -88,10 +76,6 @@ let stateReducer = {
                         {
                             id: 3,
                             text: 'Высшее'
-                        },
-                        {
-                            id: 4,
-                            text: 'Военная Академия Республики Беларусь'
                         }
                     ],
                 informationText2: [
@@ -104,16 +88,8 @@ let stateReducer = {
                         text: 'Футбол, Хорошее кино'
                     },
                     {
-                        id: 7,
-                        text: 'aleks.valushko@yandex.ru'
-                    },
-                    {
-                        id: 4,
-                        text: 'www.mywebsite.com'
-                    },
-                    {
-                        id: 5,
-                        text: '+375-33-662-48-22'
+                        id: 3,
+                        text: 'Военная Академия Республики Беларусь'
                     }
                 ]
             },
@@ -245,9 +221,9 @@ let stateReducer = {
                 [
                     {id: 1, title: 'Адрес:', text: 'г. Минск, ул. Неманская, д. 16, кв. 8'},
                     {id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru'},
-                    {id: 3, title: 'Телефон:', text: '+375-33-662-48-22'},
-                    {id: 4, title: 'Веб-сайт:', text: 'mywebsite.com'}
-                ]
+                    {id: 3, title: 'Веб-сайт:', text: 'mywebsite.com'}
+                ],
+            tel: {title: 'Телефон:', number: '+375-33-662-48-22'}
         }
     }
 ;

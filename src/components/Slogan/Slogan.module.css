@@ -38,6 +38,9 @@
   overflow: hidden;
   z-index: 0;
   position: relative; }
+  .articlesButton a {
+    text-decoration: none;
+    color: white; }
 
 .articlesButton:before {
   content: "";

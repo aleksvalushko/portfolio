@@ -113,6 +113,9 @@
   z-index: 0;
   position: relative;
   height: 8vh; }
+  .aboutMeDownloadCVButton a, .aboutMeSendMessageButton a {
+    text-decoration: none;
+    color: white; }
 
 .aboutMeDownloadCVButton:before, .aboutMeSendMessageButton:before {
   content: "";
@@ -135,4 +138,4 @@
   transition: 0.5s ease-in-out;
   left: -28px; }
 
-/*# sourceMappingURL=Typed.module.css.map */
+/*# sourceMappingURL=AboutMe.module.css.map */

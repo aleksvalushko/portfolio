@@ -8,25 +8,24 @@ class TypedReact extends React.Component {
         const options = {
             strings: strings,
             typeSpeed: 80,
-            backSpeed: 50
+            backSpeed: 50,
+            showCursor: false
         };
         this.typed = new Typed(this.el, options);
     }
 
-    componentWillUnmount() {
-        this.typed.destroy();
-    }
+    /*
+        componentWillUnmount() {
+            this.typed.destroy();
+        }*/
 
     render() {
         return (
-            <div className={mod.typed}>
-          <span
-              style={{whiteSpace: 'pre'}}
-              ref={(el) => {
-                  this.el = el;
-              }}
-          />
-            </div>
+            <span
+                ref={(el) => {
+                    this.el = el;
+                }}
+            />
         );
     }
 }

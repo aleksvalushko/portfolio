@@ -1,6 +1,7 @@
 import React from 'react';
 import mod from './Skills.module.sass';
 import Skill from "./Skill";
+import Fade from "react-reveal/Fade";
 
 function Skills({skills}) {
 
@@ -20,19 +21,20 @@ function Skills({skills}) {
     });*/
 
     return (
-        <div className={mod.skills}>
-            <div className={mod.container}>
-                <div className={mod.skillsDescription}>
-                    <div className={mod.skillsDescriptionTitle}>{skills.title}</div>
-                    <div className={mod.skillsDescriptionText}>{skills.descriptionText}</div>
-                </div>
-                <div className={mod.skillsLevel}>
-                    {
-                        level.map(el => {
-                            return <Skill title={el.title} experience={el.experience} percent={el.percent} key={el.id}/>
-                        })
-                    }
-                    {/*<div className={mod.skillsLevelItems}>
+        <div className={mod.skills} id='skills'>
+            <Fade bottom>
+                <div className={mod.container}>
+                    <div className={mod.skillsDescription}>
+                        <div className={mod.skillsDescriptionTitle}>{skills.title}</div>
+                        <div className={mod.skillsDescriptionText}>{skills.descriptionText}</div>
+                    </div>
+                    <div className={mod.skillsLevel}>
+                        {
+                            level.map(el => {
+                                return <Skill title={el.title} experience={el.experience} percent={el.percent} key={el.id}/>
+                            })
+                        }
+                        {/*<div className={mod.skillsLevelItems}>
                         <div className={mod.skillsLevelItem}>
                             <div className={mod.skillsLevelItemTitle}>
                                 <span>{level.firstTechnology.title}</span>{level.firstTechnology.experience}</div>
@@ -67,8 +69,9 @@ function Skills({skills}) {
                         </div>
                         <div className={mod.skillsLevelItemLine4}></div>
                     </div>*/}
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     );
 }

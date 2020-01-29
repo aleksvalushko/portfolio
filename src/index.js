@@ -7,6 +7,7 @@ import {combineReducers, createStore} from "redux";
 import {reducer as formReducer} from 'redux-form';
 import stateReducer from "./redux/stateReducer";
 import {Provider} from "react-redux";
+import {BrowserRouter} from "react-router-dom";
 
 
 let reducers = combineReducers({
@@ -19,9 +20,10 @@ let store = createStore(reducers);
 
 ReactDOM.render(
     <Provider store={store}>
-        <App state={stateReducer}/>
+        <BrowserRouter>
+            <App state={stateReducer}/>
+        </BrowserRouter>
     </Provider>
-
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
