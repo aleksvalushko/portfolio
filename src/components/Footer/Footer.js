@@ -12,6 +12,7 @@ function Footer() {
         <div className={mod.footer}>
             <Fade bottom>
                 <div className={mod.container}>
+                    <div>Алексей Валушко</div>
                     <div className={mod.footerMainBlock}>
                         <div className={mod.footerItem}>
                             <a href="https://www.linkedin.com/in/aleksey-valushko-37333816b/" target='_blank'>

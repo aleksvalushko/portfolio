@@ -22,7 +22,7 @@ function App(state) {
             <Skills skills={state.skills}/>
             <Projects projects={state.projects}/>
             <Slogan slogan={state.slogan}/>
-            <News news={state.news}/>
+            {/*<News news={state.news}/>*/}
             <Contacts contacts={state.contacts}/>
             <Footer/>
 

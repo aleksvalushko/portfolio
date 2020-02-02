@@ -26,13 +26,15 @@ let stateReducer = {
                 firstElement: 'Я Алексей Валушко и я ',
                 secondElement: ['верстальщик', 'java script разработчик', 'front-end разработчик']
             },
-            descriptionText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci aliquid\n' +
-                '                            aperiam\n' +
-                '                            architecto assumenda aut consequatur cum distinctio dolor dolore eaque eveniet facere id\n' +
-                '                            ipsa, iure\n' +
-                '                            magni maxime nam nostrum optio quaerat quia quidem, ratione recusandae repudiandae sapiente\n' +
-                '                            temporibus\n' +
-                '                            vel vitae voluptatem voluptates. Alias corporis cum minima omnis praesentium!',
+            descriptionText: {
+                firstPar: 'Привет! Меня зовут ',
+                secondPart: 'Алексей Валушко.',
+                thirdPart: ' Я front-end разработчик и я очень увлечен и предан своей работе. ' +
+                    'Имея небольшой опыт работы в качестве верстальщика, front-end разработчика, ' +
+                    'я приобрел навыки и знания, необходимые для успеха вашего проекта. Мне нравится ' +
+                    'каждый шаг процесса проектирования, от обсуждения и совместной работы до ' +
+                    'концепции и исполнения, но больше всего мне нравится видеть готовый продукт в действии.'
+            },
             information: {
                 informationTitle1:
                     [

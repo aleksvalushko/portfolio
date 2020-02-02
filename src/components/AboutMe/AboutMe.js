@@ -27,7 +27,9 @@ function AboutMe({aboutMe}) {
                                 {aboutMe.descriptionTitle.firstElement}<span><TypedReact strings={[text[0], text[1], text[2]]}/></span>
                             </h4>
                             <p className={mod.aboutMeDescriptionText}>
-                                {aboutMe.descriptionText}
+                                {aboutMe.descriptionText.firstPar}
+                                <span>{aboutMe.descriptionText.secondPart}</span>
+                                {aboutMe.descriptionText.thirdPart}
                             </p>
                             <div className={mod.aboutMeInformation}>
                                 <div className={mod.aboutMeInformationBlock}>

@@ -54,6 +54,16 @@
   background-size: cover;
   margin-bottom: 10%; }
 
+.mainArrow {
+  width: 100%;
+  position: absolute;
+  bottom: 2vw;
+  animation: arrowJump 1.5s ease-out infinite;
+  cursor: pointer;
+  outline: none; }
+  .mainArrow img {
+    width: 1%; }
+
 @keyframes blink {
   0% {
     background-color: white; }
@@ -65,5 +75,16 @@
     background-color: transparent; }
   100% {
     background-color: white; } }
+@keyframes arrowJump {
+  0% {
+    bottom: 2vw; }
+  25% {
+    bottom: 5vw; }
+  50% {
+    bottom: 2vw; }
+  75% {
+    bottom: 3vw; }
+  100% {
+    bottom: 2vw; } }
 
 /*# sourceMappingURL=Main.module.css.map */
