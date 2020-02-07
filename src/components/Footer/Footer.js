@@ -14,7 +14,7 @@ function Footer() {
                 <div className={mod.container}>
                     <div>Алексей Валушко</div>
                     <div className={mod.footerMainBlock}>
-                        <div className={mod.footerItem}>
+                        <div className={`${mod.footerItem} ${mod.effect} ${mod.sub}`}>
                             <a href="https://www.linkedin.com/in/aleksey-valushko-37333816b/" target='_blank'>
                                 <img src={linkedIn} alt="LinkedIn"/>
                             </a>

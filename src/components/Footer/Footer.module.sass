@@ -23,14 +23,22 @@
   justify-content: space-between
 
 .footerItem
-  width: 60px
-  height: 60px
+  width: 4vw
+  height: 4vw
   margin: 5% 0
   img
     width: 80%
+  img:hover
+    @include socialNetworkHover
+    border-radius: 15px
   @media screen and (max-width: 800px)
     width: 45px
     height: 45px
+
+.footerItem:nth-last-child(1)
+  img:hover
+    @include socialNetworkHover
+    border-radius: 40px
 
 .anchor
   @include button

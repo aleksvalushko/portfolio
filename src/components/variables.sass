@@ -4,7 +4,7 @@
   width: 100%
   height: 13%
   font-size: 3.5vw
-  border-left: 6px solid darkorange
+  border-left: 6px solid #E3872D
   padding-left: 1%
   font-weight: 600
   margin-bottom: 5%
@@ -86,3 +86,19 @@
   background: #000
   width: 0
   height: 4px
+
+@mixin socialNetworkHover
+  box-shadow: 0 0 10px 5px #E3872D
+  transition: .4s
+
+@mixin projectsFront
+  background-size: cover
+  height: 100%
+  width: 100%
+
+@mixin projectsBottom
+  height: 50%
+  position: absolute
+  top: 50%
+  width: 100%
+  z-index: 0

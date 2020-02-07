@@ -20,15 +20,24 @@
   justify-content: space-between; }
 
 .footerItem {
-  width: 60px;
-  height: 60px;
+  width: 4vw;
+  height: 4vw;
   margin: 5% 0; }
   .footerItem img {
     width: 80%; }
+  .footerItem img:hover {
+    box-shadow: 0 0 10px 5px #E3872D;
+    transition: 0.4s;
+    border-radius: 15px; }
   @media screen and (max-width: 800px) {
     .footerItem {
       width: 45px;
       height: 45px; } }
+
+.footerItem:nth-last-child(1) img:hover {
+  box-shadow: 0 0 10px 5px #E3872D;
+  transition: 0.4s;
+  border-radius: 40px; }
 
 .anchor {
   background: #E3872D;
