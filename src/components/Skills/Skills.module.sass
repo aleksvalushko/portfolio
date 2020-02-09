@@ -1,118 +1,131 @@
 @import '../variables'
 
 .skills
-  height: 60vh
+  height: 80vh
   background-color: #f6f7fd
   display: flex
   justify-content: center
+  padding: 5% 0
 
 .container
   width: 80%
   display: flex
-  //flex-direction: column
-  justify-content: space-between
+  flex-direction: column
+  justify-content: space-around
   align-items: center
 
-//.skillsDescription
-//  font-size: 1.5vw
-//  font-weight: 600
-//
-//.skills
-//  display: flex
-//  justify-content: space-around
-//  max-width: 100%
-//  img
-//    width: 100%
-
-.skillsDescription
-  width: 40%
-  height: 25vh
-  display: flex
-  flex-direction: column
-  align-items: flex-start
-  justify-content: space-around
-
-.skillsDescriptionTitle
-  font-size: 1.7vw
-  font-weight: 500
-
-.skillsDescriptionText
-  font-size: 1vw
-  line-height: 1.7
+.skillsTitle
+  @include blocksTitle
+  //font-size: 1.5vw
+  //font-weight: 600
 
 .skillsLevel
-  width: 55%
-  height: 45%
+  width: 100%
+  height: 60vh
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+
+.skill1, .skill2, .skill3, .skill4, .skill5, .skill6
+  width: 33.3%
   display: flex
   flex-direction: column
-  justify-content: space-between
+  justify-content: center
+  align-items: center
+  img
+    width: 30%
+    margin-bottom: 5%
 
-.skillsLevelItems
-  display: flex
-  flex-direction: column
-  justify-content: space-between
+//.skillsDescription
+//  width: 40%
+//  height: 25vh
+//  display: flex
+//  flex-direction: column
+//  align-items: flex-start
+//  justify-content: space-around
 
-.skillsLevelItem
-  display: flex
-  justify-content: space-between
-  height: 4vh
+//.skillsDescriptionTitle
+//  font-size: 1.7vw
+//  font-weight: 500
+//
+//.skillsDescriptionText
+//  font-size: 1vw
+//  line-height: 1.7
 
-.skillsLevelItemTitle
-  font-size: 0.9vw
-  font-weight: 500
-  span
-    font-size: 1vw
-    font-weight: 700
+//.skillsLevel
+//  width: 55%
+//  height: 45%
+//  display: flex
+//  flex-direction: column
+//  justify-content: space-between
 
-.skillsLevelItemPercent
-  font-size: 1vw
-  font-weight: 700
-
-.skillsContainerLine
-  position: relative
-
-.skillsLevelItemLine1
-  background: #d8d8d8
-  height: 4px
-  border-radius: 5px
-
-.skillsLevelItemLine11
-  @include skillsLevelLine
-  animation: line11 1s linear 1 forwards
-
-.skillsLevelItemLine12
-  @include skillsLevelLine
-  animation: line12 1s linear 1 forwards
-
-.skillsLevelItemLine13
-  @include skillsLevelLine
-  animation: line13 1s linear 1 forwards
-
-.skillsLevelItemLine14
-  @include skillsLevelLine
-  animation: line14 1s linear 1 forwards
-
-@keyframes line11
-  from
-    width: 0
-  to
-    width: 90%
-
-@keyframes line12
-  from
-    width: 0
-  to
-    width: 80%
-
-@keyframes line13
-  from
-    width: 0
-  to
-    width: 50%
-
-@keyframes line14
-  from
-    width: 0
-  to
-    width: 55%
+//.skillsLevelItems
+//  display: flex
+//  flex-direction: column
+//  justify-content: space-between
+//
+//.skillsLevelItem
+//  display: flex
+//  justify-content: space-between
+//  height: 4vh
+//
+//.skillsLevelItemTitle
+//  font-size: 0.9vw
+//  font-weight: 500
+//  span
+//    font-size: 1vw
+//    font-weight: 700
+//
+//.skillsLevelItemPercent
+//  font-size: 1vw
+//  font-weight: 700
+//
+//.skillsContainerLine
+//  position: relative
+//
+//.skillsLevelItemLine1
+//  background: #d8d8d8
+//  height: 4px
+//  border-radius: 5px
+//
+//.skillsLevelItemLine11
+//  @include skillsLevelLine
+//  animation: line11 1s linear 1 forwards
+//
+//.skillsLevelItemLine12
+//  @include skillsLevelLine
+//  animation: line12 1s linear 1 forwards
+//
+//.skillsLevelItemLine13
+//  @include skillsLevelLine
+//  animation: line13 1s linear 1 forwards
+//
+//.skillsLevelItemLine14
+//  @include skillsLevelLine
+//  animation: line14 1s linear 1 forwards
+//
+//@keyframes line11
+//  from
+//    width: 0
+//  to
+//    width: 90%
+//
+//@keyframes line12
+//  from
+//    width: 0
+//  to
+//    width: 80%
+//
+//@keyframes line13
+//  from
+//    width: 0
+//  to
+//    width: 50%
+//
+//@keyframes line14
+//  from
+//    width: 0
+//  to
+//    width: 55%
 

@@ -16,7 +16,7 @@ function Skills({skills}) {
     return (
         <div className={mod.skills} id='skills'>
             <Fade bottom>
-                <div className={mod.container}>
+                {/*<div className={mod.container}>
                     <div className={mod.skillsDescription}>
                         <div className={mod.skillsDescriptionTitle}>{skills.title}</div>
                         <div className={mod.skillsDescriptionText}>{skills.descriptionText}</div>
@@ -24,22 +24,23 @@ function Skills({skills}) {
                     <div className={mod.skillsLevel}>
                         {
                             level.map(el => {
-                                return <Skill title={el.title} experience={el.experience} percent={el.percent} key={el.id}/>
+                                return <Skill title={el.title} experience={el.experience} percent={el.percent}
+                                              key={el.id}/>
                             })
                         }
                     </div>
-                </div>
-                {/*<div className={mod.container}>
-                    <div className={mod.skillsDescription}>Мои скиллы</div>
-                    <div className={mod.skills}>
-                        <div><img src={react} alt="react"/></div>
-                        <div><img src={redux} alt="redux"/></div>
-                        <div><img src={js} alt="js"/></div>
-                        <div><img src={html5} alt="html5"/></div>
-                        <div><img src={sass} alt="sass"/></div>
-                        <div><img src={json} alt="json"/></div>
-                    </div>
                 </div>*/}
+                <div className={mod.container}>
+                    <div className={mod.skillsTitle}>Мои скиллы</div>
+                    <div className={mod.skillsLevel}>
+                        <div className={mod.skill1}><img src={react} alt="react"/>React</div>
+                        <div className={mod.skill2}><img src={redux} alt="redux"/>Redux</div>
+                        <div className={mod.skill3}><img src={js} alt="js"/>Java Script</div>
+                        <div className={mod.skill4}><img src={html5} alt="html5"/>HTML 5</div>
+                        <div className={mod.skill5}><img src={sass} alt="sass"/>SASS</div>
+                        <div className={mod.skill6}><img src={json} alt="json"/>JSON</div>
+                    </div>
+                </div>
             </Fade>
         </div>
     );
