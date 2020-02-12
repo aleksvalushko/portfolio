@@ -1,7 +1,7 @@
 @import '../variables'
 
 .contacts
-  height: 100vh
+  max-height: 100vh
   display: flex
   justify-content: center
   align-items: center
@@ -20,9 +20,11 @@
   display: flex
   flex-direction: column
   justify-content: space-between
+  align-content: space-around
 
 .contactsTitle
   @include blocksTitle
+  margin-top: 2.5%
 
 .contactsContentBlock
   display: flex
@@ -37,6 +39,10 @@
   display: flex
   line-height: 3
   font-size: 1vw
+  @media screen and (max-width: 800px)
+    font-size: 1.3vw
+  @media screen and (max-width: 600px)
+    font-size: 1.4vw
   div:first-child
     margin-right: 2%
     font-weight: 600

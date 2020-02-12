@@ -1,9 +1,20 @@
 .main
-  background-image: url('../../images/background3.jpg')
+  background-image: url('../../images/background6.jpg')
   background-size: cover
   height: 100vh
   display: flex
   justify-content: center
+  z-index: 0
+
+.main:after
+  content: ''
+  height: 100vh
+  width: 100%
+  position: absolute
+  z-index: 1
+  background-color: #335272
+  opacity: .7
+
 
 .container
   display: flex
@@ -13,6 +24,7 @@
   width: 80%
   height: 90%
   text-align: center
+  z-index: 2
 
 .mainDescription
   color: white
@@ -45,12 +57,16 @@
 .mainPhoto
   width: 200px
   height: 200px
-  border: 8px solid rgba(255,255,255,.5)
+  border: 8px solid rgba(191, 191, 191, 0.9)
   border-radius: 50%
   background-image: url('../../images/myPhoto.jpg')
   background-position: center
   background-size: cover
   margin-bottom: 10%
+  @media screen and (max-width: 600px)
+    width: 150px
+    height: 150px
+    border: 5px solid rgba(191, 191, 191, 0.9)
 
 .mainArrow
   width: 100%
@@ -61,6 +77,9 @@
   outline: none
   img
     width: 1%
+  @media screen and (max-width: 700px)
+    img
+      width: 2%
 
 @keyframes blink
   0%

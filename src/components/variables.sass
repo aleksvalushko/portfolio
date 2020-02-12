@@ -4,7 +4,7 @@
   width: 100%
   height: 13%
   font-size: 3.5vw
-  border-left: 6px solid #E3872D
+  border-left: 0.5vw solid #E3872D
   padding-left: 1%
   font-weight: 600
   margin-bottom: 5%
@@ -17,7 +17,6 @@
   margin: 1%
   border: none
   border-bottom: 1px solid black
-  //background-color: #f6f7fd
   background-color: white
   outline: none
   font-size: 1.2vw
@@ -39,6 +38,10 @@
   overflow: hidden
   z-index: 0
   position: relative
+  @media screen and (max-width: 700px)
+    font-size: 1.2vw
+  @media screen and (max-width: 700px)
+    height: 5vh
 
 @mixin buttonBefore
   content: ""

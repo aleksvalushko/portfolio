@@ -37,8 +37,6 @@ function Projects({projects}) {
                                 </div>
                                 <div className={mod.bottom2}></div>
                             </a>
-                            {/*<a href="#" className={mod.projectsItemImage1} title='TodoList'></a>
-                            <a href="#" className={mod.projectsItemImage2} title='SocialNetwork'></a>*/}
                         </div>
                     </div>
                 </div>

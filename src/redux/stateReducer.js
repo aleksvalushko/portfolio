@@ -15,7 +15,7 @@ let stateReducer = {
             lastName: 'ВАЛУШКО',
             specialize: {
                 firstElement: 'Я',
-                secondElement: ['верстальщик', 'java script разработчик', 'front-end разработчик']
+                secondElement: ['Верстальщик', 'Java Script разработчик', 'Front-End разработчик']
             }
         },
         aboutMe: {
@@ -24,13 +24,13 @@ let stateReducer = {
             photo: aboutMePhoto,
             descriptionTitle: {
                 firstElement: 'Я Алексей Валушко и я ',
-                secondElement: ['верстальщик', 'java script разработчик', 'front-end разработчик']
+                secondElement: ['Верстальщик', 'Java Script разработчик', 'Front-End разработчик']
             },
             descriptionText: {
                 firstPar: 'Привет! Меня зовут ',
                 secondPart: 'Алексей Валушко.',
-                thirdPart: ' Я front-end разработчик и я очень увлечен и предан своей работе. ' +
-                    'Имея небольшой опыт работы в качестве верстальщика, front-end разработчика, ' +
+                thirdPart: ' Я Front-End разработчик и я очень увлечен и предан своей работе. ' +
+                    'Имея небольшой опыт работы в качестве верстальщика, Java Script и Front-End разработчика, ' +
                     'я приобрел навыки и знания, необходимые для успеха вашего проекта. Мне нравится ' +
                     'каждый шаг процесса проектирования, от обсуждения и совместной работы до ' +
                     'концепции и исполнения, но больше всего мне нравится видеть готовый продукт в действии.'
@@ -73,7 +73,7 @@ let stateReducer = {
                         },
                         {
                             id: 2,
-                            text: 'Минск, Буларусь'
+                            text: 'Минск, Беларусь'
                         },
                         {
                             id: 3,

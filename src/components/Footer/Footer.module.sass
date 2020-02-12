@@ -1,9 +1,9 @@
 @import '../variables'
 
 .footer
-  height: 30vh
+  max-height: 30vh
   display: flex
-
+  padding: 2% 0
   justify-content: center
   align-items: center
   background-color: #041230
@@ -16,40 +16,85 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  font-size: 1.5vw
 
 .footerMainBlock
   width: 35%
   display: flex
   justify-content: space-between
+  position: relative
 
 .footerItem
   width: 4vw
   height: 4vw
   margin: 5% 0
+  @media screen and (max-width: 800px)
+    width: 5vw
+    height: 5vw
   img
     width: 80%
   img:hover
     @include socialNetworkHover
-    border-radius: 15px
-  @media screen and (max-width: 800px)
-    width: 45px
-    height: 45px
+    border-radius: 0.8vw
+    @media screen and (max-width: 1100px)
+      border-radius: 0.9vw
+    @media screen and (max-width: 800px)
+      border-radius: 1.1vw
+    @media screen and (max-width: 700px)
+      border-radius: 1.2vw
 
 .footerItem:nth-last-child(1)
   img:hover
     @include socialNetworkHover
-    border-radius: 40px
+    border-radius: 2vw
+
+.footerCopywriter
+  font-size: 1.2vw
 
 .anchor
   @include button
-  width: 40px
-  height: 40px
+  width: 2vw
+  height: 2vw
   display: flex
   justify-content: center
   position: fixed
   z-index: 100
-  top: 40vw
-  left: 92vw
+  top: 45vw
+  left: 95vw
+  @media screen and (max-width: 1400px)
+    top: 27vw
+    left: 95vw
+  @media screen and (max-width: 1300px)
+    top: 30vw
+    left: 95vw
+  @media screen and (max-width: 1200px)
+    top: 33vw
+    left: 96vw
+  @media screen and (max-width: 1100px)
+    top: 36vw
+    left: 95vw
+  @media screen and (max-width: 1000px)
+    top: 41vw
+    left: 95vw
+  @media screen and (max-width: 900px)
+    top: 44vw
+    left: 95vw
+  @media screen and (max-width: 800px)
+    top: 50vw
+    left: 95vw
+  @media screen and (max-width: 700px)
+    top: 59vw
+    left: 95vw
+    height: 2vw
+  @media screen and (max-width: 600px)
+    top: 68vw
+    left: 95vw
+  @media screen and (max-width: 500px)
+    top: 81vw
+    left: 95vw
+  @media screen and (max-width: 400px)
+    top: 105vw
+    left: 95vw
   img
     width: 20%
 
