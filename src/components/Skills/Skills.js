@@ -6,7 +6,7 @@ import redux from '../../images/skills/redux2.svg';
 import sass from '../../images/skills/sass2.svg';
 import html5 from '../../images/skills/html52.svg';
 import json from '../../images/skills/json2.svg';
-import js from '../../images/skills/js2.svg';
+import js from '../../images/skills/js6.svg';
 import github from '../../images/skills/github2.svg';
 
 function Skills({skills}) {

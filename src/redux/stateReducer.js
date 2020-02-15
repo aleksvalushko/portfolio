@@ -102,59 +102,36 @@ let stateReducer = {
             }
         },
         skills: {
-            title: 'Мои скиллы',
-            descriptionText:
-                'Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n' +
-                '            Autem beatae, cupiditate deserunt eum illo in ipsum iure labore perferendis placeat quaerat, quibusdam\n' +
-                '            ullam vel velit voluptate. Architecto dolor magnam nam necessitatibus officia omnis recusandae, vel!',
-            level:
-                [{
-                    id: 1,
-                    title: 'HTML',
-                    experience: ' - n лет опыта',
-                    percent: '90%'
-                },
-                    {
-                        id: 2,
-                        title: 'CSS',
-                        experience: ' - n лет опыта',
-                        percent: '80%'
-                    },
-                    {
-                        id: 3,
-                        title: 'JS',
-                        experience: ' - n года опыта',
-                        percent: '50%'
-                    },
-                    {
-                        id: 4,
-                        title: 'React JS',
-                        experience: ' - 1/2 года опыта',
-                        percent: '55%'
-                    }
-                ]
-        }
-        ,
+            title: 'Мои скиллы'
+        },
         projects: {
             title: 'МОИ ПРОЕКТЫ',
             underTitle:
                 'Посмотрите мои крайние работы',
             button:
                 'Смотреть',
-            projectOne:
-                'Todolist',
-            projectTwo:
-                'Social Network'
-
-        }
-        ,
+            project: [
+                {
+                    id: 1,
+                    title: 'TODOLIST',
+                    text: 'Одностраничное приложение, которое отлично подходит для того, чтобы помочь ' +
+                        'придерживаться планов, достигать целей и ничего не забывать.'
+                },
+                {
+                    id: 2,
+                    title: 'Social Network',
+                    text:
+                        'Еще в разработке...'
+                }
+            ]
+        },
         slogan: {
             title: 'Рассматриваю варианты удаленной работы',
             button:
                 'Найми меня'
         }
         ,
-        news: {
+        /*news: {
             title: 'ПОСЛЕДНИЕ НОВОСТИ',
             underTitle:
                 'Последние Новости сферы IT',
@@ -214,7 +191,7 @@ let stateReducer = {
                     image: thirdNewsImage
                 }
             ]
-        },
+        },*/
         contacts: {
             title: 'КОНТАКТЫ',
             underTitle:
@@ -225,7 +202,11 @@ let stateReducer = {
                     {id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru'},
                     {id: 3, title: 'Веб-сайт:', text: 'mywebsite.com'}
                 ],
-            tel: {title: 'Телефон:', number: '+375-33-662-48-22'}
+            tel:
+                {
+                    title: 'Телефон:', number:
+                        '+375-33-662-48-22'
+                }
         }
     }
 ;

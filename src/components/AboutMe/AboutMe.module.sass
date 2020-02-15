@@ -1,7 +1,7 @@
 @import '../variables'
 
 .aboutMe
-  min-height: 100vh
+  height: 100vh
   background-color: #fff
   display: flex
   justify-content: center
@@ -107,6 +107,8 @@
   line-height: 2
   letter-spacing: 1px
   font-size: 1vw
+  @media screen and (max-width: 700px)
+    line-height: 1.5
 
 .aboutMeInformationBlock
   display: flex
@@ -114,10 +116,10 @@
   margin-bottom: 5%
   font-size: 1vw
   @media screen and (max-width: 700px)
-    margin-bottom: 2%
+    margin-bottom: 1%
     width: 80%
   @media screen and (max-width: 400px)
-    margin-bottom: 2%
+    margin-bottom: 1%
     width: 90%
 
 .aboutMeInformationElement1
@@ -145,9 +147,6 @@
   @media screen and (max-width: 400px)
     font-size: 1.2vw
 
-
-
-
 .aboutMeButtons
   width: 50%
   display: flex
@@ -163,8 +162,10 @@
     height: 6vh
   @media screen and (max-width: 700px)
     margin-right: 10%
-  @media screen and (max-width: 400px)
+  @media screen and (max-width: 500px)
     height: 5vh
+  @media screen and (max-width: 400px)
+    height: 4vh
   a
     text-decoration: none
     color: white
@@ -192,4 +193,4 @@
   @media screen and (max-width: 500px)
     left: -13px
   @media screen and (max-width: 400px)
-    left: -6px
+    left: -1px
