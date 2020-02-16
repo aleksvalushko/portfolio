@@ -4,7 +4,7 @@ import {Field, reduxForm} from "redux-form";
 import {Input, Textarea} from "../Forms/FormsControl";
 import Fade from "react-reveal/Fade";
 
-function Contacts({contacts}) {
+let Contacts = ({contacts}) => {
     return (
         <div className={mod.contacts} id='contacts'>
             <Fade bottom>
@@ -33,7 +33,7 @@ function Contacts({contacts}) {
                                 <input className={mod.contactsItem} type='text' placeholder='Имя' name='name'/>
                                 <input className={mod.contactsItem} type='e-mail' placeholder='E-mail' name='e-mail'/>
                                 <textarea className={mod.contactsItemTextarea} placeholder='Ваше сообщение' name='text'/>
-                                <button className={mod.contactsButton}>Отправить</button>
+                                <button className={mod.contactsButton}>{contacts.button}</button>
 
                             </form>
                             {/*<ContactReduxForm/>*/}
@@ -43,7 +43,7 @@ function Contacts({contacts}) {
             </Fade>
         </div>
     );
-}
+};
 
 const ContactForm = ({handleSubmit}) => {
     debugger

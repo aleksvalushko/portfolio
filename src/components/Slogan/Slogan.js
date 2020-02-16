@@ -2,7 +2,7 @@ import React from 'react';
 import mod from './Slogan.module.sass';
 import Fade from "react-reveal/Fade";
 
-function Slogan({slogan}) {
+let Slogan = ({slogan}) => {
   return (
     <div className={mod.articles}>
       <Fade bottom>
@@ -15,6 +15,6 @@ function Slogan({slogan}) {
       </Fade>
     </div>
   );
-}
+};
 
 export default Slogan;

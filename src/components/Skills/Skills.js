@@ -9,29 +9,13 @@ import json from '../../images/skills/json2.svg';
 import js from '../../images/skills/js6.svg';
 import github from '../../images/skills/github2.svg';
 
-function Skills({skills}) {
-
-    let level = skills.level;
+let Skills = ({skills}) => {
 
     return (
         <div className={mod.skills} id='skills'>
             <Fade bottom>
-                {/*<div className={mod.container}>
-                    <div className={mod.skillsDescription}>
-                        <div className={mod.skillsDescriptionTitle}>{skills.title}</div>
-                        <div className={mod.skillsDescriptionText}>{skills.descriptionText}</div>
-                    </div>
-                    <div className={mod.skillsLevel}>
-                        {
-                            level.map(el => {
-                                return <Skill title={el.title} experience={el.experience} percent={el.percent}
-                                              key={el.id}/>
-                            })
-                        }
-                    </div>
-                </div>*/}
                 <div className={mod.container}>
-                    <div className={mod.skillsTitle}>Мои скиллы</div>
+                    <div className={mod.skillsTitle}>{skills.title}</div>
                     <div className={mod.skillsLevel}>
                         <div className={mod.skill1}><img src={react} alt="react"/>React</div>
                         <div className={mod.skill2}><img src={redux} alt="redux"/>Redux</div>
@@ -45,6 +29,6 @@ function Skills({skills}) {
             </Fade>
         </div>
     );
-}
+};
 
 export default Skills;

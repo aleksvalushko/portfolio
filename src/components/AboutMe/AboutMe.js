@@ -4,7 +4,7 @@ import Tilt from 'react-tilt';
 import TypedReact from "../Typed/Typed";
 import Fade from "react-reveal/Fade";
 
-function AboutMe({aboutMe}) {
+let AboutMe = ({aboutMe}) => {
 
     let text = aboutMe.descriptionTitle.secondElement;
 
@@ -27,7 +27,7 @@ function AboutMe({aboutMe}) {
                                 {aboutMe.descriptionTitle.firstElement}<span><TypedReact strings={[text[0], text[1], text[2]]}/></span>
                             </h4>
                             <p className={mod.aboutMeDescriptionText}>
-                                {aboutMe.descriptionText.firstPar}
+                                {aboutMe.descriptionText.firstPart}
                                 <span>{aboutMe.descriptionText.secondPart}</span>
                                 {aboutMe.descriptionText.thirdPart}
                             </p>
@@ -79,6 +79,6 @@ function AboutMe({aboutMe}) {
             </Fade>
         </div>
     );
-}
+};
 
 export default AboutMe;

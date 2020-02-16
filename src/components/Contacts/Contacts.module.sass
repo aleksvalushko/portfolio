@@ -31,18 +31,25 @@
   align-items: center
   justify-content: space-between
   margin-bottom: 10%
+  @media screen and (max-width: 1000px)
+    flex-direction: column
+    align-items: start
 
 .contactsBlock
   width: 40%
+  @media screen and (max-width: 1000px)
+    width: 100%
 
 .contactsContentElement
   display: flex
   line-height: 3
-  font-size: 1vw
-  @media screen and (max-width: 800px)
-    font-size: 1.3vw
-  @media screen and (max-width: 600px)
-    font-size: 1.4vw
+  font-size: 15px
+  @media screen and (max-width: 1160px)
+    font-size: 13px
+  @media screen and (max-width: 1000px)
+    font-size: 15px
+  @media screen and (max-width: 500px)
+    font-size: 13px
   div:first-child
     margin-right: 2%
     font-weight: 600
@@ -59,6 +66,8 @@
   display: flex
   flex-direction: column
   justify-content: center
+  @media screen and (max-width: 1000px)
+    width: 100%
 
 .contactsItem
   height: 8vh
@@ -72,11 +81,5 @@
   margin-top: 5%
   @include button
 
-.contactsButton:before
-  @include buttonBefore
-
 .contactsButton:hover
   @include buttonHover
-
-.contactsButton:hover:before
-  @include buttonHoverBefore
