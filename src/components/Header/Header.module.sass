@@ -18,6 +18,8 @@
   display: flex
   justify-content: space-between
   width: 7%
+  @media screen and (max-width: 750px)
+    display: none
   a
     cursor: pointer
     font-size: 18px
@@ -26,16 +28,16 @@
 
 .nav
   width: 55%
+  display: flex
+  justify-content: space-between
   @media screen and (max-width: 1024px)
     width: 65%
   @media screen and (max-width: 900px)
     width: 70%
   @media screen and (max-width: 800px)
     width: 80%
-  @media screen and (max-width: 700px)
-    width: 85%
-  display: flex
-  justify-content: space-between
+  @media screen and (max-width: 750px)
+    display: none
 
 .link
   font-size: 20px
@@ -45,3 +47,70 @@
   a:hover
     color: #E3872D
 
+.toggle
+  display: none
+  width: 56px
+  height: 56px
+  position: relative
+  overflow: hidden
+  margin: 0
+  padding: 0
+  text-indent: -9999px
+  appearance: none
+  box-shadow: none
+  border-radius: 0
+  border: none
+  cursor: pointer
+  transition: background .3s
+  @media screen and (max-width: 750px)
+    display: block
+  span
+    display: block
+    position: absolute
+    background: black
+    height: 4px
+    top: 27px
+    left: 10px
+    right: 10px
+    border-radius: 3px
+  span::before, span::after
+    content: ''
+    display: block
+    position: absolute
+    width: 100%
+    left: 0
+    background-color: black
+    height: 4px
+    border-radius: 3px
+  span::before
+    top: 12px
+  span::after
+    bottom: 12px
+
+.toggle:focus
+  outline: none
+
+.toggleLines
+  background: #ff3264
+  span
+    transition: background 0 .3s
+  span::before, span::after
+    transition-duration: .3s, .3s
+    transition-delay: .3s, 0
+  span::before
+    transition-property: top, transform
+  span::after
+    transition-property: bottom, transform
+
+.toggleLines.active
+  background-color: #cb0032
+  span
+    background: none
+  span::before
+    top: 0
+    transform: rotate(45deg)
+  span::after
+    bottom: 0
+    transform: rotate(-45deg)
+  span::before, span::after
+    transition-delay: 0, .3s

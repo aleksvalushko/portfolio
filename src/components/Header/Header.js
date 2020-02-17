@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import mod from './Header.module.sass';
 
 let Header = ({header, setEditMode}) => {
 
+  let [activeMode, setActiveMode] = useState(false);
 
+  let active = activeMode ? `${mod.toggle} ${mod.toggleLines} ${mod.active}` : `${mod.toggle} ${mod.toggleLines}`;
 
   return (
     <div className={mod.header}>
@@ -18,6 +20,7 @@ let Header = ({header, setEditMode}) => {
           <a href='#projects' className={mod.link}>{header.link3}</a>
           <a href='#contacts' className={mod.link}>{header.link4}</a>
         </div>
+        <button className={active} onClick={ () => {setActiveMode(true)} }><span></span></button>
       </div>
     </div>
   );
