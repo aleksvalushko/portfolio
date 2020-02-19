@@ -6,12 +6,16 @@
   width: 100%
   position: fixed
   z-index: 3
+  @media screen and (max-width: 750px)
+    background-color: transparent
 
 .container
   width: 80%
   display: flex
   justify-content: space-between
   align-items: center
+  @media screen and (max-width: 750px)
+    width: 100%
 
 .language
   color: white
@@ -51,8 +55,9 @@
   display: none
   width: 56px
   height: 56px
-  position: relative
+  position: fixed
   overflow: hidden
+  top: 0
   margin: 0
   padding: 0
   text-indent: -9999px
@@ -62,12 +67,13 @@
   border: none
   cursor: pointer
   transition: background .3s
+  z-index: 1
   @media screen and (max-width: 750px)
     display: block
   span
     display: block
     position: absolute
-    background: black
+    background: white
     height: 4px
     top: 27px
     left: 10px
@@ -79,7 +85,7 @@
     position: absolute
     width: 100%
     left: 0
-    background-color: black
+    background-color: white
     height: 4px
     border-radius: 3px
   span::before
@@ -91,7 +97,7 @@
   outline: none
 
 .toggleLines
-  background: #ff3264
+  background: #082768
   span
     transition: background 0 .3s
   span::before, span::after
@@ -103,7 +109,7 @@
     transition-property: bottom, transform
 
 .toggleLines.active
-  background-color: #cb0032
+  background-color: #082768
   span
     background: none
   span::before
@@ -114,3 +120,50 @@
     transform: rotate(-45deg)
   span::before, span::after
     transition-delay: 0, .3s
+
+.headerMenu
+  height: 450px
+  background-color: #041230
+  display: none
+  justify-content: space-around
+  width: 100%
+  position: relative
+  bottom: 0
+  transition: bottom 1s ease-in-out
+  a
+    color: white
+
+.menuBlocks
+  position: absolute
+  top: 250px
+  width: 70%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.menuItem
+  display: flex
+  flex-direction: column
+  line-height: 2
+  position: absolute
+
+.menuLanguage
+  display: flex
+  width: 15%
+  height: 30px
+  justify-content: space-between
+  align-items: flex-end
+  position: absolute
+  left: 50vw
+
+@keyframes menu
+  0%
+    bottom: 260px
+  20%
+    bottom: 200px
+  40%
+    bottom: 140px
+  60%
+    bottom: 70px
+  100%
+    top: 0

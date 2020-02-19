@@ -4,14 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {combineReducers, createStore} from "redux";
-import {reducer as formReducer} from 'redux-form';
 import stateReducer from "./redux/stateReducer";
 import {Provider} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
 
 
 let reducers = combineReducers({
-        form: formReducer,
         state: stateReducer
     }
 );

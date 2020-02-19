@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import mod from './Contacts.module.sass';
-import {Field, reduxForm} from "redux-form";
-import {Input, Textarea} from "../Forms/FormsControl";
 import Fade from "react-reveal/Fade";
 
 let Contacts = ({contacts}) => {
+
+    let [activeValidation, setActiveValidation] = useState(false);
+
+    let valid = activeValidation ? `${mod.contactsItem} ${mod.validation}` : `${mod.contactsItem}`;
+
+
     return (
         <div className={mod.contacts} id='contacts'>
             <Fade bottom>
@@ -30,13 +34,16 @@ let Contacts = ({contacts}) => {
                                 </div>
                             </div>
                             <form className={mod.contactsForm} action='https://formspree.io/xknjadwo' method='POST'>
-                                <input className={mod.contactsItem} type='text' placeholder='Имя' name='name'/>
-                                <input className={mod.contactsItem} type='e-mail' placeholder='E-mail' name='e-mail'/>
-                                <textarea className={mod.contactsItemTextarea} placeholder='Ваше сообщение' name='text'/>
+                                <input className={mod.contactsItem} type='text' placeholder='Имя' name='name'
+                                    minLength='1' maxLength='40' />
+                                <input className={valid} type='e-mail' placeholder='E-mail' name='e-mail'
+                                       required minLength='1' maxLength='30'
+                                       onClick={ () => {setActiveValidation(true)}}
+                                       onBlur={ () => {setActiveValidation(false)}} />
+                                <textarea className={mod.contactsItemTextarea} placeholder='Ваше сообщение' name='text'
+                                          minLength='1' maxLength='200' />
                                 <button className={mod.contactsButton}>{contacts.button}</button>
-
                             </form>
-                            {/*<ContactReduxForm/>*/}
                         </div>
                     </div>
                 </div>
@@ -44,24 +51,5 @@ let Contacts = ({contacts}) => {
         </div>
     );
 };
-
-const ContactForm = ({handleSubmit}) => {
-    debugger
-    return (
-        <form onSubmit={handleSubmit}>
-            <Field name='name' component={Input} placeholder='Имя' className={mod.contactsItem}/>
-            <Field name='e-mail' component={Input} placeholder='e-mail' className={mod.contactsItem}/>
-            <Field name='message' component={Textarea} placeholder='...your message'
-                   className={mod.contactsItemTextarea}/>
-            <div className={mod.contactsButton}>
-                <button>Send</button>
-            </div>
-        </form>
-)
-};
-
-const ContactReduxForm = reduxForm({
-    form: 'contactForm'
-})(ContactForm);
 
 export default Contacts;
