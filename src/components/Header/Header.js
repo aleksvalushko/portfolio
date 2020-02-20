@@ -33,13 +33,17 @@ let Header = ({header, setEditMode}) => {
               <div className={mod.headerMenu} id='menu'>
                 <div className={mod.menuBlocks}>
                   <div className={mod.menuItem}>
-                    <a href='#aboutMe' className={mod.link} onClick={ () => {setActiveMode(!activeMode);
+                    <a href='#aboutMe' className={mod.link} onClick={ () => {
+                        setActiveMode(!activeMode);
                         headerMenu()}}>{header.link1}</a>
-                    <a href='#skills' className={mod.link} onClick={ () => {setActiveMode(!activeMode);
+                    <a href='#skills' className={mod.link} onClick={ () => {
+                        setActiveMode(!activeMode);
                         headerMenu()}}>{header.link2}</a>
-                    <a href='#projects' className={mod.link} onClick={ () => {setActiveMode(!activeMode);
+                    <a href='#projects' className={mod.link} onClick={ () => {
+                        setActiveMode(!activeMode);
                         headerMenu()}}>{header.link3}</a>
-                    <a href='#contacts' className={mod.link} onClick={ () => {setActiveMode(!activeMode);
+                    <a href='#contacts' className={mod.link} onClick={ () => {
+                        setActiveMode(!activeMode);
                         headerMenu()}}>{header.link4}</a>
                   </div>
                   <div className={mod.menuLanguage}>
