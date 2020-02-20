@@ -11,9 +11,6 @@ let Header = ({header, setEditMode}) => {
         activeMode
             ? document.querySelector('#menu').style.display = 'none'
             : document.querySelector('#menu').style.display = 'flex';
-      /*activeMode
-          ? document.querySelector('#menu').style.bottom = '260px'
-          : document.querySelector('#menu').style.bottom = '0';*/
     };
 
     return (
