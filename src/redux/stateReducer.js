@@ -100,10 +100,10 @@ let stateReducer = {
                 }
             },
             skills: {
-                title: 'МОИ СКИЛЛЫ'
+                title: 'СКИЛЛЫ'
             },
             projects: {
-                title: 'МОИ ПРОЕКТЫ',
+                title: 'ПРОЕКТЫ',
                 underTitle:
                     'Посмотрите мои крайние работы',
                 button:
