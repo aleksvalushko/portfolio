@@ -159,7 +159,7 @@ let stateReducer = {
             },
             main: {
                 name: 'ALEKS',
-                lastName: 'VALUSHKO',
+                lastName: 'TESTING',
                 specialize: {
                     firstElement: `I'm a `,
                     secondElement: ['Make up man', 'Java Script developer', 'Front-End developer']
