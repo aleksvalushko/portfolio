@@ -176,7 +176,7 @@ let stateReducer = {
                 descriptionText: {
                     firstPart: 'Hi! My name is ',
                     secondPart: 'Aleks Valushko.',
-                    thirdPart: ' I am Front-End developer. I am a Front-End Developer, and I\'m very passionate and ' +
+                    thirdPart: ' I am a Front-End Developer, and I\'m very passionate and ' +
                         'dedicated to my work. With little experience as a make up man, java script and front-end ' +
                         'developer, I have acquired the skills and knowledge necessary to make your project a success. ' +
                         'I enjoy every step of the design process, from discussion and collaboration to concept and ' +
