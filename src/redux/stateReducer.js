@@ -162,7 +162,7 @@ let stateReducer = {
                 lastName: 'VALUSHKO',
                 specialize: {
                     firstElement: `I'm a `,
-                    secondElement: ['Make up man', 'Java Script developer', 'Front-End developer']
+                    secondElement: ['HTML/CSS specialist', 'Java Script developer', 'Front-End developer']
                 }
             },
             aboutMe: {
@@ -171,7 +171,7 @@ let stateReducer = {
                 photo: aboutMePhoto,
                 descriptionTitle: {
                     firstElement: `I'm Aleks Valushko and I'm a `,
-                    secondElement: ['Make up man', 'Java Script developer', 'Front-End developer']
+                    secondElement: ['HTML/CSS specialist', 'Java Script developer', 'Front-End developer']
                 },
                 descriptionText: {
                     firstPart: 'Hi! My name is ',
