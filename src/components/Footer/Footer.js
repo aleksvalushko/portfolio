@@ -1,9 +1,9 @@
 import React from 'react';
 import mod from './Footer.module.sass';
-import linkedIn from '../../images/linkedin3.svg';
-import twitter from '../../images/twitter3.svg';
-import facebook from '../../images/facebook3.svg';
-import github from '../../images/github3.svg';
+import linkedIn from '../../images/linkedin.svg';
+import twitter from '../../images/twitter.svg';
+import facebook from '../../images/facebook.svg';
+import github from '../../images/github.svg';
 import upArrow from '../../images/up-arrow.svg';
 import Fade from "react-reveal/Fade";
 
