@@ -135,8 +135,7 @@ let stateReducer = {
                 content:
                     [
                         {id: 1, title: 'Адрес:', text: 'г. Минск, ул. Неманская, д. 16, кв. 8'},
-                        {id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru'},
-                        {id: 3, title: 'Веб-сайт:', text: 'mywebsite.com'}
+                        {id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru'}
                     ],
                 tel:
                     {
@@ -161,7 +160,7 @@ let stateReducer = {
                 name: 'ALEKS',
                 lastName: 'VALUSHKO',
                 specialize: {
-                    firstElement: `I'm a `,
+                    firstElement: `I'm a`,
                     secondElement: ['HTML/CSS specialist', 'Java Script developer', 'Front-End developer']
                 }
             },
@@ -283,8 +282,7 @@ let stateReducer = {
                 content:
                     [
                         {id: 1, title: 'Address:', text: '16/8 Nemanskaya street, Minsk, Belarus'},
-                        {id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru'},
-                        {id: 3, title: 'Website:', text: 'mywebsite.com'}
+                        {id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru'}
                     ],
                 tel:
                     {
