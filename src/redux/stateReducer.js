@@ -260,13 +260,14 @@ let stateReducer = {
                     {
                         id: 1,
                         title: 'TODOLIST',
-                        text: 'A SPA that\'s great for helping stick to plans, achieve goals and remember nothing.'
+                        text: 'A SPA that\'s great for helping stick to plans, achieve goals and remember nothing.',
+                        link: 'http://aleksvalushko.github.io/todolist'
                     },
                     {
                         id: 2,
                         title: 'Social Network',
-                        text:
-                            'In progress...'
+                        text: 'In progress...',
+                        link: '#'
                     }
                 ]
             },

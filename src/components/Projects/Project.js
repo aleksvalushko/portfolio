@@ -5,23 +5,10 @@ function Project({project}) {
 
     let front = (project.id === 1) ? mod.front1 : mod.front2;
     let bottom = (project.id === 1) ? mod.bottom1 : mod.bottom2;
-debugger
-    let href;
-    switch (project.id){
-        case 1:
-            href =  'http://aleksvalushko.github.io/todolist';
-            break;
-        case 2:
-            href = '#';
-            break;
-        default:
-            href = '#';
-            break;
-    };
 
     return (
         <div>
-            <a href={href} className={mod.projectsItemImage}>
+            <a href={project.link} className={mod.projectsItemImage}>
                 <h2>{project.title}</h2>
                 <div className={mod.top}>
                     <div className={`${front} ${mod.face}`}></div>
