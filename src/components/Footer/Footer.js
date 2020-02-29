@@ -11,7 +11,7 @@ let Footer = ({footer}) => {
                     <div>{footer.author}</div>
                     <div className={mod.footerMainBlock}>
                         {footer.links.map( item => {
-                            return <div className={`${mod.footerItem} ${mod.effect} ${mod.sub}`} key={item.id}>
+                            return <div key={item.id} className={`${mod.footerItem} ${mod.effect} ${mod.sub}`}>
                                 <a href={item.link} target='_blank'>
                                     <img src={item.image} alt={item.alt}/>
                                 </a>

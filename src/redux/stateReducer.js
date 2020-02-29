@@ -6,12 +6,12 @@ import github from "../images/github.svg";
 
 let stateReducer = {
         ru: {
-            header: {
-                link1: 'ГЛАВНАЯ',
-                link2: 'СКИЛЛЫ',
-                link3: 'ПРОЕКТЫ',
-                link4: 'КОНТАКТЫ'
-            },
+            header: [
+                {id: 1, link: 'ГЛАВНАЯ', anchor: '#aboutMe'},
+                {id: 2, link: 'СКИЛЛЫ', anchor: '#skills'},
+                {id: 3, link: 'ПРОЕКТЫ', anchor: '#projects'},
+                {id: 4, link: 'КОНТАКТЫ', anchor: '#contacts'}
+            ],
             main: {
                 name: 'АЛЕКСЕЙ',
                 lastName: 'ВАЛУШКО',
@@ -160,12 +160,12 @@ let stateReducer = {
             }
         },
         en: {
-            header: {
-                link1: 'MAIN',
-                link2: 'SKILLS',
-                link3: 'PROJECTS',
-                link4: 'CONTACTS'
-            },
+            header: [
+                {id: 1, link: 'MAIN', anchor: '#aboutMe'},
+                {id: 2, link: 'SKILLS', anchor: '#skills'},
+                {id: 3, link: 'PROJECTS', anchor: '#projects'},
+                {id: 4, link: 'CONTACTS', anchor: '#contacts'}
+            ],
             main: {
                 name: 'ALEKS',
                 lastName: 'VALUSHKO',
