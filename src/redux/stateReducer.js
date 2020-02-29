@@ -152,10 +152,10 @@ let stateReducer = {
                 author: 'Алексей Валушко',
                 copywrite: '© Copyright 2020. All Rights are Reserved.',
                 links: [
-                    {link: 'https://www.linkedin.com/in/aleksvalushko/', image: linkedIn, alt: 'LinkedIn'},
-                    {link: 'https://twitter.com/joker_aleks', image: twitter, alt: 'Twitter'},
-                    {link: 'https://www.facebook.com/aleks.valushko.1', image: facebook, alt: 'Facebook'},
-                    {link: 'https://github.com/aleksvalushko', image: github, alt: 'Github'}
+                    {id: 1, link: 'https://www.linkedin.com/in/aleksvalushko/', image: linkedIn, alt: 'LinkedIn'},
+                    {id: 2, link: 'https://twitter.com/joker_aleks', image: twitter, alt: 'Twitter'},
+                    {id: 3, link: 'https://www.facebook.com/aleks.valushko.1', image: facebook, alt: 'Facebook'},
+                    {id: 4, link: 'https://github.com/aleksvalushko', image: github, alt: 'Github'}
                 ]
             }
         },
