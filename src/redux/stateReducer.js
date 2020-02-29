@@ -1,4 +1,8 @@
 import aboutMePhoto from '../images/aboutMe.jpg';
+import linkedIn from "../images/linkedin.svg";
+import twitter from "../images/twitter.svg";
+import facebook from "../images/facebook.svg";
+import github from "../images/github.svg";
 
 let stateReducer = {
         ru: {
@@ -146,7 +150,13 @@ let stateReducer = {
             },
             footer: {
                 author: 'Алексей Валушко',
-                copywrite: '© Copyright 2020. All Rights are Reserved.'
+                copywrite: '© Copyright 2020. All Rights are Reserved.',
+                links: [
+                    {link: 'https://www.linkedin.com/in/aleksvalushko/', image: linkedIn, alt: 'LinkedIn'},
+                    {link: 'https://twitter.com/joker_aleks', image: twitter, alt: 'Twitter'},
+                    {link: 'https://www.facebook.com/aleks.valushko.1', image: facebook, alt: 'Facebook'},
+                    {link: 'https://github.com/aleksvalushko', image: github, alt: 'Github'}
+                ]
             }
         },
         en: {
@@ -294,7 +304,13 @@ let stateReducer = {
             },
             footer: {
                 author: 'Aleks Valushko',
-                copywrite: '© Copyright 2020. All Rights are Reserved.'
+                copywrite: '© Copyright 2020. All Rights are Reserved.',
+                links: [
+                    {link: 'https://www.linkedin.com/in/aleksvalushko/', image: linkedIn, alt: 'LinkedIn'},
+                    {link: 'https://twitter.com/joker_aleks', image: twitter, alt: 'Twitter'},
+                    {link: 'https://www.facebook.com/aleks.valushko.1', image: facebook, alt: 'Facebook'},
+                    {link: 'https://github.com/aleksvalushko', image: github, alt: 'Github'}
+                ]
             }
         }
     }
