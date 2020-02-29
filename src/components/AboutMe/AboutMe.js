@@ -35,34 +35,22 @@ let AboutMe = ({aboutMe}) => {
                                 <div className={mod.aboutMeInformationBlock}>
                                     <div className={mod.aboutMeInformationElement1}>
                                         {aboutMe.information.informationTitle1.map(el => {
-                                                return <div key={el.id}>
-                                                    {el.title}
-                                                </div>
-                                            }
+                                                return <div key={el.id}>{el.title}</div>}
                                         )}
                                     </div>
                                     <div className={mod.aboutMeInformationElement2}>
                                         {aboutMe.information.informationText1.map(el => {
-                                                return <div key={el.id}>
-                                                    {el.text}
-                                                </div>
-                                            }
+                                                return <div key={el.id}>{el.text}</div>}
                                         )}
                                     </div>
                                     <div className={mod.aboutMeInformationElement1}>
                                         {aboutMe.information.informationTitle2.map(el => {
-                                                return <div key={el.id}>
-                                                    {el.title}
-                                                </div>
-                                            }
+                                                return <div key={el.id}>{el.title}</div>}
                                         )}
                                     </div>
                                     <div className={mod.aboutMeInformationElement2}>
                                         {aboutMe.information.informationText2.map(el => {
-                                                return <div key={el.id}>
-                                                    {el.text}
-                                                </div>
-                                            }
+                                                return <div key={el.id}>{el.text}</div>}
                                         )}
                                     </div>
                                 </div>
