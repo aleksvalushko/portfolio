@@ -14,11 +14,7 @@ let Projects = ({projects}) => {
                             <span>{projects.underTitle}</span>
                         </div>
                         <div className={mod.projectsItems}>
-                            {
-                                projects.project.map(el => {
-                                    return <Project key={el.id} project={el}/>
-                                })
-                            }
+                            {projects.project.map(el => <Project key={el.id} project={el}/>)}
                         </div>
                     </div>
                 </div>

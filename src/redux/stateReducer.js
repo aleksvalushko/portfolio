@@ -3,6 +3,13 @@ import linkedIn from "../images/linkedin.svg";
 import twitter from "../images/twitter.svg";
 import facebook from "../images/facebook.svg";
 import github from "../images/github.svg";
+import github2 from "../images/skills/github2.svg";
+import react from "../images/skills/react2.svg";
+import redux from "../images/skills/redux2.svg";
+import js from "../images/skills/js6.svg";
+import html5 from "../images/skills/html52.svg";
+import json from "../images/skills/json2.svg";
+import sass from '../images/skills/sass2.svg';
 
 let stateReducer = {
         ru: {
@@ -104,7 +111,16 @@ let stateReducer = {
                 }
             },
             skills: {
-                title: 'СКИЛЛЫ'
+                title: 'СКИЛЛЫ',
+                skill: [
+                    {id: 1, title: 'React', alt: 'react', image: react},
+                    {id: 1, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 1, title: 'Java Script', alt: 'js', image: js},
+                    {id: 1, title: 'HTML 5', alt: 'html5', image: html5},
+                    {id: 1, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 1, title: 'JSON', alt: 'json', image: json},
+                    {id: 1, title: 'GitHub', alt: 'github', image: github2}
+                ]
             },
             projects: {
                 title: 'ПРОЕКТЫ',
@@ -258,7 +274,16 @@ let stateReducer = {
                 }
             },
             skills: {
-                title: 'SKILLS'
+                title: 'SKILLS',
+                skill: [
+                    {id: 1, title: 'React', alt: 'react', image: react},
+                    {id: 1, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 1, title: 'Java Script', alt: 'js', image: js},
+                    {id: 1, title: 'HTML 5', alt: 'html5', image: html5},
+                    {id: 1, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 1, title: 'JSON', alt: 'json', image: json},
+                    {id: 1, title: 'GitHub', alt: 'github', image: github2}
+                ]
             },
             projects: {
                 title: 'PROJECTS',

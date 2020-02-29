@@ -15,9 +15,7 @@ let Main = ({main}) => {
                     <div className={mod.mainPhoto}></div>
                     <div className={mod.mainName}>{main.name} <span>{main.lastName}</span></div>
                     <h1 className={mod.mainSpecialize}>{specialize.firstElement}
-                        <span><TypedReact strings={text.map(el => {
-                            return el
-                        })}/></span>
+                        <span><TypedReact strings={text.map(el => el)}/></span>
                     </h1>
                     <a href='#aboutMe' className={mod.mainArrow}><img src={doubleArrowDown} alt="doubleArrowDown"/></a>
                 </div>
