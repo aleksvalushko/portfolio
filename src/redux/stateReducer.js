@@ -114,12 +114,12 @@ let stateReducer = {
                 title: 'СКИЛЛЫ',
                 skill: [
                     {id: 1, title: 'React', alt: 'react', image: react},
-                    {id: 1, title: 'Redux', alt: 'redux', image: redux},
-                    {id: 1, title: 'Java Script', alt: 'js', image: js},
-                    {id: 1, title: 'HTML 5', alt: 'html5', image: html5},
-                    {id: 1, title: 'SASS', alt: 'sass', image: sass},
-                    {id: 1, title: 'JSON', alt: 'json', image: json},
-                    {id: 1, title: 'GitHub', alt: 'github', image: github2}
+                    {id: 2, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 3, title: 'Java Script', alt: 'js', image: js},
+                    {id: 4, title: 'HTML 5', alt: 'html5', image: html5},
+                    {id: 5, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 6, title: 'JSON', alt: 'json', image: json},
+                    {id: 7, title: 'GitHub', alt: 'github', image: github2}
                 ]
             },
             projects: {
@@ -277,12 +277,12 @@ let stateReducer = {
                 title: 'SKILLS',
                 skill: [
                     {id: 1, title: 'React', alt: 'react', image: react},
-                    {id: 1, title: 'Redux', alt: 'redux', image: redux},
-                    {id: 1, title: 'Java Script', alt: 'js', image: js},
-                    {id: 1, title: 'HTML 5', alt: 'html5', image: html5},
-                    {id: 1, title: 'SASS', alt: 'sass', image: sass},
-                    {id: 1, title: 'JSON', alt: 'json', image: json},
-                    {id: 1, title: 'GitHub', alt: 'github', image: github2}
+                    {id: 2, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 3, title: 'Java Script', alt: 'js', image: js},
+                    {id: 4, title: 'HTML 5', alt: 'html5', image: html5},
+                    {id: 5, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 6, title: 'JSON', alt: 'json', image: json},
+                    {id: 7, title: 'GitHub', alt: 'github', image: github2}
                 ]
             },
             projects: {
