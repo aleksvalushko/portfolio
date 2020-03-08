@@ -24,7 +24,8 @@ let AboutMe = ({aboutMe}) => {
                         </Tilt>
                         <div className={mod.aboutMeDescription}>
                             <h4 className={mod.aboutMeDescriptionTitle}>
-                                {aboutMe.descriptionTitle.firstElement}<span><TypedReact strings={[text[0], text[1], text[2]]}/></span>
+                                {aboutMe.descriptionTitle.firstElement}
+                                <span><TypedReact strings={[text[0], text[1], text[2]]}/></span>
                             </h4>
                             <p className={mod.aboutMeDescriptionText}>
                                 {aboutMe.descriptionText.firstPart}
@@ -55,7 +56,9 @@ let AboutMe = ({aboutMe}) => {
                                     </div>
                                 </div>
                                 <div className={mod.aboutMeButtons}>
-                                    <button className={mod.aboutMeDownloadCVButton}>{aboutMe.buttons.first}</button>
+                                    <button className={mod.aboutMeDownloadCVButton}>
+                                        <a href="../../CV.pdf" download>{aboutMe.buttons.first}</a>
+                                    </button>
                                     <button className={mod.aboutMeSendMessageButton}>
                                         <a href="#contacts">{aboutMe.buttons.second}</a>
                                     </button>
