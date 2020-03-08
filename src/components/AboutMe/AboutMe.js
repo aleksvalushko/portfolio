@@ -57,7 +57,7 @@ let AboutMe = ({aboutMe}) => {
                                 </div>
                                 <div className={mod.aboutMeButtons}>
                                     <button className={mod.aboutMeDownloadCVButton}>
-                                        <a href="../../CV.pdf" download>{aboutMe.buttons.first}</a>
+                                        <a href="CV.pdf" download>{aboutMe.buttons.first}</a>
                                     </button>
                                     <button className={mod.aboutMeSendMessageButton}>
                                         <a href="#contacts">{aboutMe.buttons.second}</a>
