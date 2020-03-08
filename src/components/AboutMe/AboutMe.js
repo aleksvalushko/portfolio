@@ -3,6 +3,7 @@ import mod from './AboutMe.module.sass';
 import Tilt from 'react-tilt';
 import TypedReact from "../Typed/Typed";
 import Fade from "react-reveal/Fade";
+import {Link} from "react-router-dom";
 
 let AboutMe = ({aboutMe}) => {
 
@@ -57,7 +58,7 @@ let AboutMe = ({aboutMe}) => {
                                 </div>
                                 <div className={mod.aboutMeButtons}>
                                     <button className={mod.aboutMeDownloadCVButton}>
-                                        <a href="" download={'CV.pdf'}>{aboutMe.buttons.first}</a>
+                                        <Link to="/CV.pdf" target='_blank' download>{aboutMe.buttons.first}</Link>
                                     </button>
                                     <button className={mod.aboutMeSendMessageButton}>
                                         <a href="#contacts">{aboutMe.buttons.second}</a>
