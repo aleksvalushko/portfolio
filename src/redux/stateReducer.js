@@ -133,13 +133,15 @@ let stateReducer = {
                         id: 1,
                         title: 'TODOLIST',
                         text: 'Одностраничное приложение, которое отлично подходит для того, чтобы помочь ' +
-                            'придерживаться планов, достигать целей и ничего не забывать.'
+                            'придерживаться планов, достигать целей и ничего не забывать.',
+                        link: 'http://aleksvalushko.github.io/todolist'
                     },
                     {
                         id: 2,
                         title: 'Social Network',
                         text:
-                            'Еще в разработке...'
+                            'Еще в разработке...',
+                        link: 'https://aleksvalushko.github.io/SocialNetwork/'
                     }
                 ]
             },
@@ -302,7 +304,7 @@ let stateReducer = {
                         id: 2,
                         title: 'Social Network',
                         text: 'In progress...',
-                        link: '#'
+                        link: 'https://aleksvalushko.github.io/SocialNetwork/'
                     }
                 ]
             },
