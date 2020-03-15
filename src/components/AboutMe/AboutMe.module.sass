@@ -155,10 +155,11 @@
     width: 100%
 
 .aboutMeDownloadCVButton, .aboutMeSendMessageButton
-  @include button
+  border: none
+  background: transparent
   a
     text-decoration: none
     color: white
-
-.aboutMeDownloadCVButton:hover, .aboutMeSendMessageButton:hover
-  @include buttonHover
+    @include button
+    &:hover
+      @include buttonHover

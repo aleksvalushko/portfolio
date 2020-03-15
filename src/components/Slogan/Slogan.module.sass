@@ -32,10 +32,11 @@
 
 
 .articlesButton
-  @include button
+  border: none
+  background: transparent
   a
+    @include button
     text-decoration: none
     color: white
-
-.articlesButton:hover
-  @include buttonHover
+    &:hover
+      @include buttonHover
