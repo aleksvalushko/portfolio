@@ -10,15 +10,15 @@ let AboutMe = ({aboutMe}) => {
     let text = aboutMe.descriptionTitle.secondElement;
 
     return (
-        <div className={mod.aboutMe} id='aboutMe'>
-            <Fade bottom>
+        <Fade bottom>
+            <div className={mod.aboutMe} id='aboutMe'>
                 <div className={mod.container}>
                     <div className={mod.aboutMeTitle}>
                         {aboutMe.title}
                         <span>{aboutMe.underTitle}</span>
                     </div>
                     <div className={mod.aboutMeDescriptionBlock}>
-                        <Tilt className={mod.tilt} options={{ max : 25 }}  >
+                        <Tilt className={mod.tilt} options={{max: 25}}>
                             <div className={mod.aboutMePhoto}>
                                 <img src={aboutMe.photo} alt="aboutMe"/>
                             </div>
@@ -37,22 +37,26 @@ let AboutMe = ({aboutMe}) => {
                                 <div className={mod.aboutMeInformationBlock}>
                                     <div className={mod.aboutMeInformationElement1}>
                                         {aboutMe.information.informationTitle1.map(el => {
-                                                return <div key={el.id}>{el.title}</div>}
+                                                return <div key={el.id}>{el.title}</div>
+                                            }
                                         )}
                                     </div>
                                     <div className={mod.aboutMeInformationElement2}>
                                         {aboutMe.information.informationText1.map(el => {
-                                                return <div key={el.id}>{el.text}</div>}
+                                                return <div key={el.id}>{el.text}</div>
+                                            }
                                         )}
                                     </div>
                                     <div className={mod.aboutMeInformationElement1}>
                                         {aboutMe.information.informationTitle2.map(el => {
-                                                return <div key={el.id}>{el.title}</div>}
+                                                return <div key={el.id}>{el.title}</div>
+                                            }
                                         )}
                                     </div>
                                     <div className={mod.aboutMeInformationElement2}>
                                         {aboutMe.information.informationText2.map(el => {
-                                                return <div key={el.id}>{el.text}</div>}
+                                                return <div key={el.id}>{el.text}</div>
+                                            }
                                         )}
                                     </div>
                                 </div>
@@ -68,8 +72,8 @@ let AboutMe = ({aboutMe}) => {
                         </div>
                     </div>
                 </div>
-            </Fade>
-        </div>
+            </div>
+        </Fade>
     );
 };
 

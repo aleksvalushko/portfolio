@@ -10,8 +10,8 @@ let Contacts = ({contacts}) => {
 
 
     return (
-        <div className={mod.contacts} id='contacts'>
-            <Fade bottom>
+        <Fade bottom>
+            <div className={mod.contacts} id='contacts'>
                 <div className={mod.container}>
                     <div className={mod.contactsMainBlock}>
                         <div className={mod.contactsTitle}>
@@ -21,7 +21,7 @@ let Contacts = ({contacts}) => {
                         <div className={mod.contactsContentBlock}>
                             <div className={mod.contactsBlock}>
                                 {
-                                    contacts.content.map( el => {
+                                    contacts.content.map(el => {
                                         return <div className={mod.contactsContentElement} key={el.id}>
                                             <div>{el.title}</div>
                                             <div>{el.text}</div>
@@ -35,20 +35,24 @@ let Contacts = ({contacts}) => {
                             </div>
                             <form className={mod.contactsForm} action='https://formspree.io/xknjadwo' method='POST'>
                                 <input className={mod.contactsItem} type='text' placeholder='Имя' name='name'
-                                    minLength='1' maxLength='40' />
+                                       minLength='1' maxLength='40'/>
                                 <input className={valid} type='e-mail' placeholder='E-mail' name='e-mail'
                                        required minLength='1' maxLength='30'
-                                       onClick={ () => {setActiveValidation(true)}}
-                                       onBlur={ () => {setActiveValidation(false)}} />
+                                       onClick={() => {
+                                           setActiveValidation(true)
+                                       }}
+                                       onBlur={() => {
+                                           setActiveValidation(false)
+                                       }}/>
                                 <textarea className={mod.contactsItemTextarea} placeholder='Ваше сообщение' name='text'
-                                          minLength='1' maxLength='200' />
+                                          minLength='1' maxLength='200'/>
                                 <button className={mod.contactsButton}>{contacts.button}</button>
                             </form>
                         </div>
                     </div>
                 </div>
-            </Fade>
-        </div>
+            </div>
+        </Fade>
     );
 };
 

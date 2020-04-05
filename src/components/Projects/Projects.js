@@ -5,8 +5,8 @@ import Project from "./Project";
 
 let Projects = ({projects}) => {
     return (
-        <div className={mod.projects} id='projects'>
-            <Fade bottom>
+        <Fade bottom>
+            <div className={mod.projects} id='projects'>
                 <div className={mod.container}>
                     <div className={mod.projectsMainBlock}>
                         <div className={mod.projectsTitle}>
@@ -18,8 +18,8 @@ let Projects = ({projects}) => {
                         </div>
                     </div>
                 </div>
-            </Fade>
-        </div>
+            </div>
+        </Fade>
     );
 };
 
