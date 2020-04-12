@@ -3,8 +3,25 @@ import mod from './Projects.module.sass';
 
 function Project({project}) {
 
-    let front = (project.id === 1) ? mod.front1 : mod.front2;
-    let bottom = (project.id === 1) ? mod.bottom1 : mod.bottom2;
+    let front, bottom;
+    switch (project.id) {
+        case 1:
+            front = mod.front1;
+            bottom = mod.bottom1;
+            break;
+        case 2:
+            front = mod.front2;
+            bottom = mod.bottom2;
+            break;
+        case 3:
+            front = mod.front3;
+            bottom = mod.bottom3;
+            break;
+        default:
+            front = mod.front1;
+            bottom = mod.bottom1;
+            break;
+    }
 
     return (
         <div>

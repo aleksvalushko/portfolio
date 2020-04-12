@@ -142,6 +142,12 @@ let stateReducer = {
                         text:
                             'Еще в разработке...',
                         link: 'https://aleksvalushko.github.io/SocialNetwork/'
+                    },
+                    {
+                        id: 3,
+                        title: 'Rabbit Game',
+                        text: 'Простая игра на нативном JS',
+                        link: 'https://aleksvalushko.github.io/rabbitGame/'
                     }
                 ]
             },
@@ -305,6 +311,12 @@ let stateReducer = {
                         title: 'Social Network',
                         text: 'In progress...',
                         link: 'https://aleksvalushko.github.io/SocialNetwork/'
+                    },
+                    {
+                        id: 3,
+                        title: 'Rabbit Game',
+                        text: 'It\'s a simple game on native JS',
+                        link: 'https://aleksvalushko.github.io/rabbitGame/'
                     }
                 ]
             },
