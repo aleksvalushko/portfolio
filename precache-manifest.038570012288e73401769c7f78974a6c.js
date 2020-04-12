@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb5392f933526d9a558acf2032bf6891",
+    "revision": "2698df45f7386afe70901c769de75d49",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "76b684cc68c2b624f16b",
-    "url": "/portfolio/static/css/main.71fbee02.chunk.css"
+    "revision": "319d9c80397f55337552",
+    "url": "/portfolio/static/css/main.67994076.chunk.css"
   },
   {
     "revision": "61db2e100afc7fe84641",
     "url": "/portfolio/static/js/2.95950f17.chunk.js"
   },
   {
-    "revision": "76b684cc68c2b624f16b",
-    "url": "/portfolio/static/js/main.c225cf68.chunk.js"
+    "revision": "319d9c80397f55337552",
+    "url": "/portfolio/static/js/main.eaa99e1c.chunk.js"
   },
   {
     "revision": "c5306228cc83f6f6271c",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1b2bce3d8fb75e9fb0499bef551b3a0c",
     "url": "/portfolio/static/media/project2.1b2bce3d.png"
+  },
+  {
+    "revision": "5a07b583339891652ae72383efd77ed3",
+    "url": "/portfolio/static/media/rabbitGame.5a07b583.png"
   },
   {
     "revision": "64eca7c2099428962cd2804fd8195e4c",
