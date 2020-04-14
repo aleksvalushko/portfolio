@@ -92,7 +92,7 @@ let stateReducer = {
                     informationText2: [
                         {
                             id: 1,
-                            text: '26 лет'
+                            text: '27 лет'
                         },
                         {
                             id: 2,
@@ -263,7 +263,7 @@ let stateReducer = {
                     informationText2: [
                         {
                             id: 1,
-                            text: '26 years'
+                            text: '27 years'
                         },
                         {
                             id: 2,
