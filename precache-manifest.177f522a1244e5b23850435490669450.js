@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38fbd19f8fa145a9fcdfb3afb0d51ffc",
+    "revision": "adc31cfbbc53d6dc8d7d79584675fc71",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "cb72ffd3ce34e4f67630",
-    "url": "/portfolio/static/css/main.67994076.chunk.css"
+    "revision": "5fb1d53d518c31a5fb79",
+    "url": "/portfolio/static/css/main.362b6d89.chunk.css"
   },
   {
     "revision": "61db2e100afc7fe84641",
     "url": "/portfolio/static/js/2.95950f17.chunk.js"
   },
   {
-    "revision": "cb72ffd3ce34e4f67630",
-    "url": "/portfolio/static/js/main.847486e4.chunk.js"
+    "revision": "5fb1d53d518c31a5fb79",
+    "url": "/portfolio/static/js/main.f9b23e37.chunk.js"
   },
   {
     "revision": "c5306228cc83f6f6271c",
     "url": "/portfolio/static/js/runtime-main.7676bd13.js"
   },
   {
-    "revision": "9f48048d2bb8b1989ae950063dcc163f",
-    "url": "/portfolio/static/media/aboutMe.9f48048d.jpg"
+    "revision": "340e55eb8bbdf2654771fbbbfcb00715",
+    "url": "/portfolio/static/media/aboutMe.340e55eb.jpg"
   },
   {
-    "revision": "f48cfe0d6d7322dd6a6d22bf90541493",
-    "url": "/portfolio/static/media/background6.f48cfe0d.jpg"
+    "revision": "b29bd20398c75a899bdc6c0384c25425",
+    "url": "/portfolio/static/media/background6.b29bd203.jpg"
   },
   {
     "revision": "33edb2268b4d3c97412167f3adc5e953",
@@ -60,16 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/linkedin.c16cee94.svg"
   },
   {
-    "revision": "739376b593d9f9c28468b6259c824131",
-    "url": "/portfolio/static/media/myPhoto.739376b5.jpg"
+    "revision": "c5a2d759fcda82e64801edcac9e4d801",
+    "url": "/portfolio/static/media/myPhoto.c5a2d759.jpg"
   },
   {
     "revision": "1b2bce3d8fb75e9fb0499bef551b3a0c",
     "url": "/portfolio/static/media/project2.1b2bce3d.png"
   },
   {
-    "revision": "5a07b583339891652ae72383efd77ed3",
-    "url": "/portfolio/static/media/rabbitGame.5a07b583.png"
+    "revision": "0923bb8c84095bb657bb5b657318d9b1",
+    "url": "/portfolio/static/media/rabbitGame.0923bb8c.png"
   },
   {
     "revision": "64eca7c2099428962cd2804fd8195e4c",
@@ -82,10 +82,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6a145072dfcca657a7abe0eb182a17e3",
     "url": "/portfolio/static/media/sass2.6a145072.svg"
-  },
-  {
-    "revision": "0b2b5890c0b5f1231cb4b5268456c63b",
-    "url": "/portfolio/static/media/todolist.0b2b5890.png"
   },
   {
     "revision": "c6788e7c61aa75347eb83811189d66db",
