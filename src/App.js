@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -12,8 +12,9 @@ import AboutMe from "./components/AboutMe/AboutMe";
 let App = (state) => {
 
     let [editMode, setEditMode] = useState('en');
+    let [isLoading, setLoading] = useState(false);
 
-    switch(editMode){
+    switch (editMode) {
         case 'en':
             state = state.state.en;
             break;
@@ -23,9 +24,12 @@ let App = (state) => {
         default:
             state = state.state.en;
     }
+    useEffect(() => {
+        setLoading(true);
+    });
 
     return (
-        <div className='App'>
+        isLoading ? <div className='App'>
             <Header header={state.header} setEditMode={setEditMode}/>
             <Main main={state.main}/>
             <AboutMe aboutMe={state.aboutMe}/>
@@ -34,7 +38,8 @@ let App = (state) => {
             <Slogan slogan={state.slogan}/>
             <Contacts contacts={state.contacts}/>
             <Footer footer={state.footer}/>
-
+        </div> : <div className='AppWrapper'>
+            <div className='bounce'></div>
         </div>
     );
 };
