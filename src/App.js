@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -41,6 +41,7 @@ let App = (state) => {
         </div> : <div className='AppWrapper'>
             <div className='bounce'></div>
         </div>
+
     );
 };
 

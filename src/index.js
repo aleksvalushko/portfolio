@@ -8,7 +8,6 @@ import stateReducer from "./redux/stateReducer";
 import {Provider} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
 
-
 let reducers = combineReducers({
         state: stateReducer
     }
