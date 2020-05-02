@@ -10,6 +10,7 @@ import js from "../images/skills/js6.svg";
 import html5 from "../images/skills/html52.svg";
 import json from "../images/skills/json2.svg";
 import sass from '../images/skills/sass2.svg';
+import typescript from '../images/skills/typescript.svg';
 
 let stateReducer = {
         ru: {
@@ -119,7 +120,8 @@ let stateReducer = {
                     {id: 4, title: 'HTML 5', alt: 'html5', image: html5},
                     {id: 5, title: 'SASS', alt: 'sass', image: sass},
                     {id: 6, title: 'JSON', alt: 'json', image: json},
-                    {id: 7, title: 'GitHub', alt: 'github', image: github2}
+                    {id: 7, title: 'GitHub', alt: 'github', image: github2},
+                    {id: 8, title: 'TypeScript', alt: 'typescript', image: typescript}
                 ]
             },
             projects: {
@@ -290,7 +292,8 @@ let stateReducer = {
                     {id: 4, title: 'HTML 5', alt: 'html5', image: html5},
                     {id: 5, title: 'SASS', alt: 'sass', image: sass},
                     {id: 6, title: 'JSON', alt: 'json', image: json},
-                    {id: 7, title: 'GitHub', alt: 'github', image: github2}
+                    {id: 7, title: 'GitHub', alt: 'github', image: github2},
+                    {id: 8, title: 'TypeScript', alt: 'typescript', image: typescript}
                 ]
             },
             projects: {
