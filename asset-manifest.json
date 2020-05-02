@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ba860d86.chunk.css",
-    "main.js": "/portfolio/static/js/main.88db5b43.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.88db5b43.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.aee07894.chunk.css",
+    "main.js": "/portfolio/static/js/main.a202f73d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a202f73d.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.7676bd13.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.7676bd13.js.map",
-    "static/js/2.95950f17.chunk.js": "/portfolio/static/js/2.95950f17.chunk.js",
-    "static/js/2.95950f17.chunk.js.map": "/portfolio/static/js/2.95950f17.chunk.js.map",
+    "static/js/2.6defb5aa.chunk.js": "/portfolio/static/js/2.6defb5aa.chunk.js",
+    "static/js/2.6defb5aa.chunk.js.map": "/portfolio/static/js/2.6defb5aa.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.25f58b2419c89e6c43c999a681cefafd.js": "/portfolio/precache-manifest.25f58b2419c89e6c43c999a681cefafd.js",
+    "precache-manifest.22053c53159fd8c9d0e3c5177cebc6ad.js": "/portfolio/precache-manifest.22053c53159fd8c9d0e3c5177cebc6ad.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.ba860d86.chunk.css.map": "/portfolio/static/css/main.ba860d86.chunk.css.map",
+    "static/css/main.aee07894.chunk.css.map": "/portfolio/static/css/main.aee07894.chunk.css.map",
     "static/media/Projects.module.sass": "/portfolio/static/media/todolist.8a411b2d.png",
     "static/media/aboutMe.jpg": "/portfolio/static/media/aboutMe.340e55eb.jpg",
     "static/media/Main.module.sass": "/portfolio/static/media/myPhoto.c5a2d759.jpg",
@@ -26,12 +26,13 @@
     "static/media/redux2.svg": "/portfolio/static/media/redux2.f30eeb17.svg",
     "static/media/sass2.svg": "/portfolio/static/media/sass2.6a145072.svg",
     "static/media/twitter.svg": "/portfolio/static/media/twitter.c6788e7c.svg",
+    "static/media/typescript.svg": "/portfolio/static/media/typescript.025a883a.svg",
     "static/media/up-arrow.svg": "/portfolio/static/media/up-arrow.5459d993.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7676bd13.js",
-    "static/js/2.95950f17.chunk.js",
-    "static/css/main.ba860d86.chunk.css",
-    "static/js/main.88db5b43.chunk.js"
+    "static/js/2.6defb5aa.chunk.js",
+    "static/css/main.aee07894.chunk.css",
+    "static/js/main.a202f73d.chunk.js"
   ]
 }
