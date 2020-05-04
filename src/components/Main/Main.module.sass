@@ -68,17 +68,22 @@
   margin: 8% 0 1% 0
 
 .mainArrow
-  width: 100%
+  width: 10%
+  height: 40px
+  display: flex
+  justify-content: center
+  align-items: center
   position: absolute
   bottom: 2vw
-  animation: arrowJump 1.5s ease-out infinite
   cursor: pointer
   outline: none
+  animation: arrowJump 1.5s ease-out infinite
   img
-    width: 1%
+    width: 17%
   @media screen and (max-width: 700px)
+    animation: arrowJumpMedia 1.5s ease-out infinite
     img
-      width: 2%
+      width: 40%
 
 @keyframes blink
   0%
@@ -101,5 +106,17 @@
     bottom: 2vw
   75%
     bottom: 3vw
+  100%
+    bottom: 2vw
+
+@keyframes arrowJumpMedia
+  0%
+    bottom: 2vw
+  25%
+    bottom: 7vw
+  50%
+    bottom: 2vw
+  75%
+    bottom: 4vw
   100%
     bottom: 2vw
