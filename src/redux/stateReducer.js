@@ -161,7 +161,7 @@ let stateReducer = {
                         id: 5,
                         title: 'My Weather',
                         text: 'Показывают температуру в текущем регионе пользователя',
-                        link: 'https://aleksvalushko.github.io/rabbitGame/'
+                        link: 'https://aleksvalushko.github.io/my-weather/'
                     }
                 ]
             },
@@ -343,7 +343,7 @@ let stateReducer = {
                         id: 5,
                         title: 'My Weather',
                         text: 'Show your current temperature',
-                        link: 'https://aleksvalushko.github.io/rabbitGame/'
+                        link: 'https://aleksvalushko.github.io/my-weather/'
                     }
                 ]
             },
