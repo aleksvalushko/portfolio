@@ -17,6 +17,14 @@ function Project({project}) {
             front = mod.front3;
             bottom = mod.bottom3;
             break;
+        case 4:
+            front = mod.front4;
+            bottom = mod.bottom4;
+            break;
+        case 5:
+            front = mod.front5;
+            bottom = mod.bottom5;
+            break;
         default:
             front = mod.front1;
             bottom = mod.bottom1;

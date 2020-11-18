@@ -150,6 +150,18 @@ let stateReducer = {
                         title: 'Rabbit Game',
                         text: 'Простая игра на нативном JS',
                         link: 'https://aleksvalushko.github.io/rabbitGame/'
+                    },
+                    {
+                        id: 4,
+                        title: 'Rock, scissors and paper',
+                        text: 'Простая игра на нативном JS',
+                        link: 'https://aleksvalushko.github.io/rock-scissors-and-paper/'
+                    },
+                    {
+                        id: 5,
+                        title: 'My Weather',
+                        text: 'Показывают температуру в текущем регионе пользователя',
+                        link: 'https://aleksvalushko.github.io/rabbitGame/'
                     }
                 ]
             },
@@ -319,6 +331,18 @@ let stateReducer = {
                         id: 3,
                         title: 'Rabbit Game',
                         text: 'It\'s a simple game on native JS',
+                        link: 'https://aleksvalushko.github.io/rabbitGame/'
+                    },
+                    {
+                        id: 4,
+                        title: 'Rock, scissors and paper',
+                        text: 'It\'s a simple game on native JS',
+                        link: 'https://aleksvalushko.github.io/rock-scissors-and-paper/'
+                    },
+                    {
+                        id: 5,
+                        title: 'My Weather',
+                        text: 'Show your current temperature',
                         link: 'https://aleksvalushko.github.io/rabbitGame/'
                     }
                 ]
