@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ed6a2ac48537f0da7850bae0a085e13",
+    "revision": "1cfecacf60adf63ab19a1adfbf90452a",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "353a8f3de6a22551e6b3",
-    "url": "/portfolio/static/css/main.e24af344.chunk.css"
+    "revision": "4e8407ed46f3bbb977f7",
+    "url": "/portfolio/static/css/main.2752bc8f.chunk.css"
   },
   {
     "revision": "d4778df653e433e604dc",
     "url": "/portfolio/static/js/2.6defb5aa.chunk.js"
   },
   {
-    "revision": "353a8f3de6a22551e6b3",
-    "url": "/portfolio/static/js/main.cab1d8bd.chunk.js"
+    "revision": "4e8407ed46f3bbb977f7",
+    "url": "/portfolio/static/js/main.38a5aae7.chunk.js"
   },
   {
     "revision": "c5306228cc83f6f6271c",
@@ -80,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/redux2.f30eeb17.svg"
   },
   {
+    "revision": "594f01e933e2fcbe43ce83f3cdfc09d0",
+    "url": "/portfolio/static/media/rock, scissors and paper.594f01e9.png"
+  },
+  {
     "revision": "6a145072dfcca657a7abe0eb182a17e3",
     "url": "/portfolio/static/media/sass2.6a145072.svg"
   },
@@ -98,5 +102,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5459d993a51e563ba30a15f05316f92c",
     "url": "/portfolio/static/media/up-arrow.5459d993.svg"
+  },
+  {
+    "revision": "c2a4b7ecfb454ee9d75c83b3913ac996",
+    "url": "/portfolio/static/media/weather.c2a4b7ec.png"
   }
 ]);
