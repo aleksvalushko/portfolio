@@ -62,7 +62,9 @@ let AboutMe = ({aboutMe}) => {
                                 </div>
                                 <div className={mod.aboutMeButtons}>
                                     <button className={mod.aboutMeDownloadCVButton}>
-                                        <Link to="./CV.pdf" target='_blank' download>{aboutMe.buttons.first}</Link>
+                                        {aboutMe.title === 'ABOUT ME'
+                                        ? <Link to="./CV_26_11_2020_Eng.pdf" target='_blank' download>{aboutMe.buttons.first}</Link>
+                                        : <Link to="./CV_26_11_2020.pdf" target='_blank' download>{aboutMe.buttons.first}</Link>}
                                     </button>
                                     <button className={mod.aboutMeSendMessageButton}>
                                         <a href="#contacts">{aboutMe.buttons.second}</a>
