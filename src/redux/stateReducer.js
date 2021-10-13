@@ -11,6 +11,7 @@ import html5 from "../images/skills/html52.svg";
 import json from "../images/skills/json2.svg";
 import sass from '../images/skills/sass2.svg';
 import typescript from '../images/skills/typescript.svg';
+import vue from '../images/skills/vue.svg';
 
 let stateReducer = {
         ru: {
@@ -114,14 +115,15 @@ let stateReducer = {
             skills: {
                 title: 'СКИЛЛЫ',
                 skill: [
-                    {id: 1, title: 'React', alt: 'react', image: react},
-                    {id: 2, title: 'Redux', alt: 'redux', image: redux},
-                    {id: 3, title: 'Java Script', alt: 'js', image: js},
-                    {id: 4, title: 'HTML 5', alt: 'html5', image: html5},
-                    {id: 5, title: 'SASS', alt: 'sass', image: sass},
-                    {id: 6, title: 'JSON', alt: 'json', image: json},
-                    {id: 7, title: 'GitHub', alt: 'github', image: github2},
-                    {id: 8, title: 'TypeScript', alt: 'typescript', image: typescript}
+                    {id: 1, title: 'Java Script', alt: 'js', image: js},
+                    {id: 2, title: 'Vue', alt: 'vue', image: vue},
+                    {id: 3, title: 'HTML 5', alt: 'html5', image: html5},
+                    {id: 4, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 5, title: 'React', alt: 'react', image: react},
+                    {id: 6, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 7, title: 'JSON', alt: 'json', image: json},
+                    {id: 8, title: 'GitHub', alt: 'github', image: github2},
+                    {id: 9, title: 'TypeScript', alt: 'typescript', image: typescript}
                 ]
             },
             projects: {
@@ -298,14 +300,15 @@ let stateReducer = {
             skills: {
                 title: 'SKILLS',
                 skill: [
-                    {id: 1, title: 'React', alt: 'react', image: react},
-                    {id: 2, title: 'Redux', alt: 'redux', image: redux},
-                    {id: 3, title: 'Java Script', alt: 'js', image: js},
-                    {id: 4, title: 'HTML 5', alt: 'html5', image: html5},
-                    {id: 5, title: 'SASS', alt: 'sass', image: sass},
-                    {id: 6, title: 'JSON', alt: 'json', image: json},
-                    {id: 7, title: 'GitHub', alt: 'github', image: github2},
-                    {id: 8, title: 'TypeScript', alt: 'typescript', image: typescript}
+                    {id: 1, title: 'Java Script', alt: 'js', image: js},
+                    {id: 2, title: 'Vue', alt: 'vue', image: vue},
+                    {id: 3, title: 'HTML 5', alt: 'html5', image: html5},
+                    {id: 4, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 5, title: 'React', alt: 'react', image: react},
+                    {id: 6, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 7, title: 'JSON', alt: 'json', image: json},
+                    {id: 8, title: 'GitHub', alt: 'github', image: github2},
+                    {id: 9, title: 'TypeScript', alt: 'typescript', image: typescript}
                 ]
             },
             projects: {
