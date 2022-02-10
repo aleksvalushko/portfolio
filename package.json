@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://aleksvalushko.github.io/portfolio",
   "dependencies": {
-    "node-sass": "4.14.1",
+    "node-sass": "7.0.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-preloaders": "3.0.3",
