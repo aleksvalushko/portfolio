@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "874ac5cf5eb00101571487429e74376f",
+    "revision": "3b918ea3edf52c4e5e46f2dc2840a973",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "d502913093ab13986187",
-    "url": "/portfolio/static/css/main.5a2de804.chunk.css"
+    "revision": "0299ddb793feca171996",
+    "url": "/portfolio/static/css/main.9468728b.chunk.css"
   },
   {
-    "revision": "b51119584d1b5bf53440",
-    "url": "/portfolio/static/js/2.9873fbe5.chunk.js"
+    "revision": "0838c1778f8aa0b20918",
+    "url": "/portfolio/static/js/2.442c6aec.chunk.js"
   },
   {
-    "revision": "d502913093ab13986187",
-    "url": "/portfolio/static/js/main.7dd1d8d6.chunk.js"
+    "revision": "0299ddb793feca171996",
+    "url": "/portfolio/static/js/main.17ac6057.chunk.js"
   },
   {
     "revision": "c5306228cc83f6f6271c",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/background6.b29bd203.jpg"
   },
   {
+    "revision": "8f8ab4e62fc20520b6359e4778f6cd35",
+    "url": "/portfolio/static/media/css3.8f8ab4e6.svg"
+  },
+  {
     "revision": "daa1a19cf6731a39018b9cdba29150da",
     "url": "/portfolio/static/media/doubleArrowDown.daa1a19c.svg"
   },
@@ -40,16 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/facebook.7368c12b.svg"
   },
   {
+    "revision": "0e9ae7b52702ff9e70f5720196d567f4",
+    "url": "/portfolio/static/media/github.0e9ae7b5.svg"
+  },
+  {
     "revision": "9742a82dc1aaa3cc621e17dfeed2f8ac",
     "url": "/portfolio/static/media/github.9742a82d.svg"
   },
   {
-    "revision": "0e9ae7b52702ff9e70f5720196d567f4",
-    "url": "/portfolio/static/media/github2.0e9ae7b5.svg"
-  },
-  {
     "revision": "bd02c23390e63a4dc4068c65ccfe71c6",
-    "url": "/portfolio/static/media/html52.bd02c233.svg"
+    "url": "/portfolio/static/media/html5.bd02c233.svg"
   },
   {
     "revision": "47c760f12d5dfab28d6903d7dcf66085",
@@ -57,7 +61,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "0990c5082b67dc430945a65dcaf39580",
-    "url": "/portfolio/static/media/json2.0990c508.svg"
+    "url": "/portfolio/static/media/json.0990c508.svg"
   },
   {
     "revision": "70f58ad5c425736ed68ea9e78cb54e19",
@@ -73,19 +77,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "a1b72c40d2f21b4d8f3e6ea7e714bd54",
-    "url": "/portfolio/static/media/react2.a1b72c40.svg"
+    "url": "/portfolio/static/media/react.a1b72c40.svg"
   },
   {
     "revision": "0e55a6eee34c38e21bb800cf5c52b0a5",
-    "url": "/portfolio/static/media/redux2.0e55a6ee.svg"
+    "url": "/portfolio/static/media/redux.0e55a6ee.svg"
   },
   {
     "revision": "594f01e933e2fcbe43ce83f3cdfc09d0",
-    "url": "/portfolio/static/media/rock, scissors and paper.594f01e9.png"
+    "url": "/portfolio/static/media/rockScissorsAndPaper.594f01e9.png"
   },
   {
     "revision": "d962fd4e55d7e6c834d82dfeb9167e17",
-    "url": "/portfolio/static/media/sass2.d962fd4e.svg"
+    "url": "/portfolio/static/media/sass.d962fd4e.svg"
+  },
+  {
+    "revision": "c49dd9f881d898399c36cbe75877efc5",
+    "url": "/portfolio/static/media/simpleMovieApp.c49dd9f8.png"
   },
   {
     "revision": "8a411b2da1e2d2c0cd0bd7959f3b7e44",
