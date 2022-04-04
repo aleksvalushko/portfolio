@@ -3,15 +3,16 @@ import linkedIn from "../images/linkedin.svg";
 import twitter from "../images/twitter.svg";
 import facebook from "../images/facebook.svg";
 import github from "../images/github.svg";
-import github2 from "../images/skills/github2.svg";
-import react from "../images/skills/react2.svg";
-import redux from "../images/skills/redux2.svg";
+import github2 from "../images/skills/github.svg";
+import react from "../images/skills/react.svg";
+import redux from "../images/skills/redux.svg";
 import js from "../images/skills/js6.svg";
-import html5 from "../images/skills/html52.svg";
-import json from "../images/skills/json2.svg";
-import sass from '../images/skills/sass2.svg';
+import html5 from "../images/skills/html5.svg";
+import json from "../images/skills/json.svg";
+import sass from '../images/skills/sass.svg';
 import typescript from '../images/skills/typescript.svg';
 import vue from '../images/skills/vue.svg';
+import css3 from '../images/skills/css3.svg';
 
 let stateReducer = {
         ru: {
@@ -94,7 +95,7 @@ let stateReducer = {
                     informationText2: [
                         {
                             id: 1,
-                            text: '27 лет'
+                            text: '29 лет'
                         },
                         {
                             id: 2,
@@ -116,14 +117,15 @@ let stateReducer = {
                 title: 'СКИЛЛЫ',
                 skill: [
                     {id: 1, title: 'Java Script', alt: 'js', image: js},
-                    {id: 2, title: 'Vue', alt: 'vue', image: vue},
+                    {id: 2, title: 'Vue 2', alt: 'vue', image: vue},
                     {id: 3, title: 'HTML 5', alt: 'html5', image: html5},
-                    {id: 4, title: 'SASS', alt: 'sass', image: sass},
-                    {id: 5, title: 'React', alt: 'react', image: react},
-                    {id: 6, title: 'Redux', alt: 'redux', image: redux},
-                    {id: 7, title: 'JSON', alt: 'json', image: json},
-                    {id: 8, title: 'GitHub', alt: 'github', image: github2},
-                    {id: 9, title: 'TypeScript', alt: 'typescript', image: typescript}
+                    {id: 4, title: 'CSS 3', alt: 'css3', image: css3},
+                    {id: 5, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 6, title: 'React', alt: 'react', image: react},
+                    {id: 7, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 8, title: 'JSON', alt: 'json', image: json},
+                    {id: 9, title: 'GitHub', alt: 'github', image: github2},
+                    {id: 10, title: 'TypeScript', alt: 'typescript', image: typescript}
                 ]
             },
             projects: {
@@ -164,6 +166,12 @@ let stateReducer = {
                         title: 'My Weather',
                         text: 'Показывают температуру в текущем регионе пользователя',
                         link: 'https://aleksvalushko.github.io/my-weather/'
+                    },
+                    {
+                        id: 6,
+                        title: 'Simple Movie App',
+                        text: 'Простое приложение для поиска и получения информации о фильмах, используя TMDB',
+                        link: 'https://aleksvalushko.github.io/movie-app/'
                     }
                 ]
             },
@@ -279,7 +287,7 @@ let stateReducer = {
                     informationText2: [
                         {
                             id: 1,
-                            text: '27 years'
+                            text: '29 years'
                         },
                         {
                             id: 2,
@@ -301,14 +309,15 @@ let stateReducer = {
                 title: 'SKILLS',
                 skill: [
                     {id: 1, title: 'Java Script', alt: 'js', image: js},
-                    {id: 2, title: 'Vue', alt: 'vue', image: vue},
+                    {id: 2, title: 'Vue 2', alt: 'vue', image: vue},
                     {id: 3, title: 'HTML 5', alt: 'html5', image: html5},
-                    {id: 4, title: 'SASS', alt: 'sass', image: sass},
-                    {id: 5, title: 'React', alt: 'react', image: react},
-                    {id: 6, title: 'Redux', alt: 'redux', image: redux},
-                    {id: 7, title: 'JSON', alt: 'json', image: json},
-                    {id: 8, title: 'GitHub', alt: 'github', image: github2},
-                    {id: 9, title: 'TypeScript', alt: 'typescript', image: typescript}
+                    {id: 4, title: 'CSS 3', alt: 'css3', image: css3},
+                    {id: 5, title: 'SASS', alt: 'sass', image: sass},
+                    {id: 6, title: 'React', alt: 'react', image: react},
+                    {id: 7, title: 'Redux', alt: 'redux', image: redux},
+                    {id: 8, title: 'JSON', alt: 'json', image: json},
+                    {id: 9, title: 'GitHub', alt: 'github', image: github2},
+                    {id: 10, title: 'TypeScript', alt: 'typescript', image: typescript}
                 ]
             },
             projects: {
@@ -347,6 +356,12 @@ let stateReducer = {
                         title: 'My Weather',
                         text: 'Show your current temperature',
                         link: 'https://aleksvalushko.github.io/my-weather/'
+                    },
+                    {
+                        id: 6,
+                        title: 'Simple Movie App',
+                        text: 'It\'s a simple app to search and get info about movies, using TMDB',
+                        link: 'https://aleksvalushko.github.io/movie-app/'
                     }
                 ]
             },

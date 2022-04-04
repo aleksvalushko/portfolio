@@ -25,6 +25,10 @@ function Project({project}) {
             front = mod.front5;
             bottom = mod.bottom5;
             break;
+        case 6:
+            front = mod.front6;
+            bottom = mod.bottom6;
+            break;
         default:
             front = mod.front1;
             bottom = mod.bottom1;
@@ -36,10 +40,10 @@ function Project({project}) {
             <a href={project.link} className={mod.projectsItemImage}>
                 <h2>{project.title}</h2>
                 <div className={mod.top}>
-                    <div className={`${front} ${mod.face}`}></div>
+                    <div className={`${front} ${mod.face}`}/>
                     <div className={`${mod.back} ${mod.face}`}>{project.text}</div>
                 </div>
-                <div className={bottom}></div>
+                <div className={bottom}/>
             </a>
 
         </div>

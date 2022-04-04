@@ -26,7 +26,7 @@ let App = (state) => {
     }
     useEffect(() => {
         setLoading(true);
-    });
+    }, []);
 
     return (
         isLoading ? <div className='App'>
@@ -39,7 +39,7 @@ let App = (state) => {
             <Contacts contacts={state.contacts}/>
             <Footer footer={state.footer}/>
         </div> : <div className='AppWrapper'>
-            <div className='bounce'></div>
+            <div className='bounce'/>
         </div>
 
     );
