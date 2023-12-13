@@ -1,15 +1,15 @@
 import React from 'react';
-import mod from './Slogan.module.sass';
+import styles from './Slogan.module.scss';
 import Fade from "react-reveal/Fade";
 
 let Slogan = ({slogan}) => {
   return (
-    <div className={mod.articles}>
+    <div className={styles.articles}>
       <Fade bottom>
-          <div className={mod.container}>
-              <div className={mod.articlesMainBlock}>
-                  <div className={mod.articlesTitle}>{slogan.title}</div>
-                  <button className={mod.articlesButton}><a href="#contacts">{slogan.button}</a></button>
+          <div className={styles.container}>
+              <div className={styles.articlesMainBlock}>
+                  <div className={styles.articlesTitle}>{slogan.title}</div>
+                  <button className={styles.articlesButton}><a href={slogan.anchor}>{slogan.button}</a></button>
               </div>
           </div>
       </Fade>

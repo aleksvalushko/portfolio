@@ -1,52 +1,53 @@
-import React, {useState} from 'react';
-import mod from './Header.module.sass';
+import React, { useState } from 'react';
+import styles from './Header.module.scss';
 
-let Header = ({header, setEditMode}) => {
+let Header = ({ header, setCurrentLanguage }) => {
 
-    let [activeMode, setActiveMode] = useState(false);
+	let [activeMode, setActiveMode] = useState(false);
 
-    let activeButton = activeMode ? `${mod.toggle} ${mod.toggleLines} ${mod.active}` : `${mod.toggle} ${mod.toggleLines}`;
+	let activeButton = activeMode ? `${ styles.toggle } ${ styles.toggleLines } ${ styles.active }` : `${ styles.toggle } ${ styles.toggleLines }`;
 
-    let headerMenu = () => {
-        activeMode
-            ? document.querySelector('#menu').style.display = 'none'
-            : document.querySelector('#menu').style.display = 'flex';
-    };
+	let headerMenu = () => {
+		activeMode
+			? document.querySelector('#menu').style.display = 'none'
+			: document.querySelector('#menu').style.display = 'flex';
+	};
 
-    return (
-        <div className={mod.header}>
-            <div className={mod.container}>
-                <div className={mod.language}>
-                    <a onClick={() => {setEditMode('ru')}}>ru</a>
-                    <a onClick={() => {setEditMode('en')}}>en</a>
-                </div>
-                <div className={mod.nav}>
-                    {header.map( item => {
-                        return <a key={item.id} href={item.anchor} className={mod.link}>{item.link}</a>
-                    })}
-                </div>
-                <button className={activeButton} onClick={() => {
-                    setActiveMode(!activeMode);
-                    headerMenu()
-                }}><span></span></button>
-              <div className={mod.headerMenu} id='menu'>
-                <div className={mod.menuBlocks}>
-                  <div className={mod.menuItem}>
-                      {header.map( item => {
-                          return <a key={item.id} href={item.anchor} className={mod.link} onClick={ () => {
-                              setActiveMode(!activeMode);
-                              headerMenu()}}>{item.link}</a>
-                      })}
-                  </div>
-                  <div className={mod.menuLanguage}>
-                    <a onClick={ () => {setEditMode('ru')}}>ru</a>
-                    <a onClick={ () => {setEditMode('en')}}>en</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    );
+	return (
+		<div className={ styles.header }>
+			<div className={ styles.container }>
+				<div className={ styles.language }>
+					<button onClick={ () => setCurrentLanguage('ru')}>ru</button>
+					<button onClick={ () => setCurrentLanguage('en')}>en</button>
+				</div>
+				<div className={ styles.nav }>
+					{ header.map(item => {
+						return <a key={ item.id } href={ item.anchor } className={ styles.link }>{ item.link }</a>
+					}) }
+				</div>
+				<button className={ activeButton } onClick={ () => {
+					setActiveMode(!activeMode);
+					headerMenu()
+				} }><span></span></button>
+				<div className={ styles.headerMenu } id='menu'>
+					<div className={ styles.menuBlocks }>
+						<div className={ styles.menuItem }>
+							{ header.map(item => {
+								return <a key={ item.id } href={ item.anchor } className={ styles.link } onClick={ () => {
+									setActiveMode(!activeMode);
+									headerMenu()
+								} }>{ item.link }</a>
+							}) }
+						</div>
+						<div className={ styles.menuLanguage }>
+							<button onClick={ () => setCurrentLanguage('ru')}>ru</button>
+							<button onClick={ () => setCurrentLanguage('en')}>en</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Header;

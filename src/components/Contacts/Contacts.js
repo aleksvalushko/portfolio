@@ -1,40 +1,40 @@
 import React, {useState} from 'react';
-import mod from './Contacts.module.sass';
+import styles from './Contacts.module.scss';
 import Fade from "react-reveal/Fade";
 
 let Contacts = ({contacts}) => {
 
     let [activeValidation, setActiveValidation] = useState(false);
 
-    let valid = activeValidation ? `${mod.contactsItem} ${mod.validation}` : `${mod.contactsItem}`;
+    let valid = activeValidation ? `${styles.contactsItem} ${styles.validation}` : `${styles.contactsItem}`;
 
 
     return (
         <Fade bottom>
-            <div className={mod.contacts} id='contacts'>
-                <div className={mod.container}>
-                    <div className={mod.contactsMainBlock}>
-                        <div className={mod.contactsTitle}>
+            <div className={styles.contacts} id='contacts'>
+                <div className={styles.container}>
+                    <div className={styles.contactsMainBlock}>
+                        <div className={styles.contactsTitle}>
                             {contacts.title}
                             <span>{contacts.underTitle}</span>
                         </div>
-                        <div className={mod.contactsContentBlock}>
-                            <div className={mod.contactsBlock}>
+                        <div className={styles.contactsContentBlock}>
+                            <div className={styles.contactsBlock}>
                                 {
                                     contacts.content.map(el => {
-                                        return <div className={mod.contactsContentElement} key={el.id}>
+                                        return <div className={styles.contactsContentElement} key={el.id}>
                                             <div>{el.title}</div>
                                             <div>{el.text}</div>
                                         </div>
                                     })
                                 }
-                                <div className={mod.contactsContentElement}>
+                                <div className={styles.contactsContentElement}>
                                     <div>{contacts.tel.title}</div>
                                     <a href='tel: +375-33-662-48-22'>{contacts.tel.number}</a>
                                 </div>
                             </div>
-                            <form className={mod.contactsForm} action='https://formspree.io/xknjadwo' method='POST'>
-                                <input className={mod.contactsItem} type='text' placeholder='Имя' name='name'
+                            <form className={styles.contactsForm} action='https://formspree.io/xknjadwo' method='POST'>
+                                <input className={styles.contactsItem} type='text' placeholder='Имя' name='name'
                                        minLength='1' maxLength='40'/>
                                 <input className={valid} type='e-mail' placeholder='E-mail' name='e-mail'
                                        required minLength='1' maxLength='30'
@@ -44,9 +44,9 @@ let Contacts = ({contacts}) => {
                                        onBlur={() => {
                                            setActiveValidation(false)
                                        }}/>
-                                <textarea className={mod.contactsItemTextarea} placeholder='Ваше сообщение' name='text'
+                                <textarea className={styles.contactsItemTextarea} placeholder='Ваше сообщение' name='text'
                                           minLength='1' maxLength='200'/>
-                                <button className={mod.contactsButton}>{contacts.button}</button>
+                                <button className={styles.contactsButton}>{contacts.button}</button>
                             </form>
                         </div>
                     </div>

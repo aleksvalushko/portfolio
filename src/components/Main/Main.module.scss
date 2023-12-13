@@ -1,0 +1,155 @@
+.main {
+  background-image: url('../../images/background.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  width: 100%;
+  min-height: 70vh;
+
+  &:after {
+    content: '';
+    min-height: 70vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #335272;
+    opacity: .7;
+  }
+
+  @media screen and (max-width: 769px) {
+    min-height: 50vh;
+
+    &:after {
+      min-height: 50vh;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  z-index: 2;
+  @media screen and (max-width: 600px) {
+    width: 96%;
+  }
+}
+
+.mainDescription {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.mainName {
+  font-size: 4vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  @media screen and (max-width: 600px) {
+    font-size: 6.5vw;
+    span {
+      color: darkorange;
+    }
+  }
+}
+
+.mainSpecialize {
+  width: 100%;
+  font-size: 2.5vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  display: block;
+  @media screen and (max-width: 600px) {
+    font-size: 6.5vw;
+    span {
+      font-weight: 400;
+      margin-left: 0.8%;
+    }
+  }
+}
+
+.mainPhoto {
+  width: 200px;
+  height: 200px;
+  border: 8px solid rgba(191, 191, 191, 0.9);
+  border-radius: 50%;
+  background-image: url('../../images/myPhoto.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.doubleArrowDown {
+  width: 10%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -130px;
+  cursor: pointer;
+  outline: none;
+  animation: arrowJump 1.5s ease-out infinite;
+
+  img {
+    width: 17%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    animation: arrowJumpMedia 1.5s ease-out infinite;
+    img {
+      width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    animation: arrowJumpMedia 1.5s ease-out infinite;
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@keyframes arrowJump {
+  0% {
+    bottom: -130px;
+  }
+  25% {
+    bottom: -120px;
+  }
+  50% {
+    bottom: -130px;
+  }
+  75% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: -130px;
+  }
+}
+
+@keyframes arrowJumpMedia {
+  0% {
+    bottom: -130px;
+  }
+  25% {
+    bottom: -120px;
+  }
+  50% {
+    bottom: -130px;
+  }
+  75% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: -130px;
+  }
+}

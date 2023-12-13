@@ -1,17 +1,17 @@
 import React from 'react';
-import mod from './Skills.module.sass';
+import styles from './Skills.module.scss';
 import Fade from "react-reveal/Fade";
 
 let Skills = ({skills}) => {
 
     return (
         <Fade bottom>
-            <div className={mod.skills} id='skills'>
-                <div className={mod.container}>
-                    <div className={mod.skillsTitle}>{skills.title}</div>
-                    <div className={mod.skillsLevel}>
-                        {skills.skill.map(item => {
-                            return <div key={item.id} className={mod.skill}>
+            <div className={styles.skills} id='skills'>
+                <div className={styles.container}>
+                    <div className={styles.skillsTitle}>{skills.title}</div>
+                    <div className={styles.skillsLevel}>
+                        {skills.skillsArray.map(item => {
+                            return <div key={item.id} className={styles.skill}>
                                 <img src={item.image} alt={item.alt}/>{item.title}
                             </div>
                         })}

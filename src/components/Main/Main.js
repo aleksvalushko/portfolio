@@ -1,5 +1,5 @@
 import React from 'react';
-import mod from './Main.module.sass';
+import styles from './Main.module.scss';
 import TypedReact from "../Typed/Typed";
 import doubleArrowDown from '../../images/doubleArrowDown.svg';
 
@@ -9,15 +9,15 @@ let Main = ({main}) => {
     let text = specialize.secondElement;
 
     return (
-        <div className={mod.main} id='main'>
-            <div className={mod.container}>
-                <div className={mod.mainDescription}>
-                    <div className={mod.mainPhoto}></div>
-                    <div className={mod.mainName}>{main.name} <span>{main.lastName}</span></div>
-                    <h1 className={mod.mainSpecialize}>{specialize.firstElement}
+        <div className={styles.main} id='main'>
+            <div className={styles.container}>
+                <div className={styles.mainDescription}>
+                    <div className={styles.mainPhoto}></div>
+                    <div className={styles.mainName}>{main.name} <span>{main.lastName}</span></div>
+                    <h1 className={styles.mainSpecialize}>{specialize.firstElement}
                         <span><TypedReact strings={text.map(el => el)}/></span>
                     </h1>
-                    <a href='#aboutMe' className={mod.mainArrow}><img src={doubleArrowDown} alt="doubleArrowDown"/></a>
+                    <a href={main.anchor} className={styles.doubleArrowDown}><img src={doubleArrowDown} alt="doubleArrowDown"/></a>
                 </div>
             </div>
         </div>

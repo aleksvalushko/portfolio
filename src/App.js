@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -8,41 +8,33 @@ import Slogan from "./components/Slogan/Slogan";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import AboutMe from "./components/AboutMe/AboutMe";
+import useLanguage from "./context/language/useLanguage";
 
-let App = (state) => {
+let App = () => {
 
-    let [editMode, setEditMode] = useState('en');
-    let [isLoading, setLoading] = useState(false);
+	const { selectedTranslation, setCurrentLanguage } = useLanguage();
 
-    switch (editMode) {
-        case 'en':
-            state = state.state.en;
-            break;
-        case 'ru':
-            state = state.state.ru;
-            break;
-        default:
-            state = state.state.en;
-    }
-    useEffect(() => {
-        setLoading(true);
-    }, []);
+	let [isLoading, setLoading] = useState(false);
 
-    return (
-        isLoading ? <div className='App'>
-            <Header header={state.header} setEditMode={setEditMode}/>
-            <Main main={state.main}/>
-            <AboutMe aboutMe={state.aboutMe}/>
-            <Skills skills={state.skills}/>
-            <Projects projects={state.projects}/>
-            <Slogan slogan={state.slogan}/>
-            <Contacts contacts={state.contacts}/>
-            <Footer footer={state.footer}/>
-        </div> : <div className='AppWrapper'>
-            <div className='bounce'/>
-        </div>
+	useEffect(() => {
+		setLoading(true);
+	}, []);
 
-    );
+	return (
+		isLoading ? <div className='App'>
+			<Header header={ selectedTranslation.header } setCurrentLanguage={setCurrentLanguage} />
+			<Main main={ selectedTranslation.main }/>
+			<AboutMe aboutMe={ selectedTranslation.aboutMe }/>
+			<Skills skills={ selectedTranslation.skills }/>
+			<Projects projects={ selectedTranslation.projects }/>
+			<Slogan slogan={ selectedTranslation.slogan }/>
+			<Contacts contacts={ selectedTranslation.contacts }/>
+			<Footer footer={ selectedTranslation.footer }/>
+		</div> : <div className='ApselectedTranslationpWrapper'>
+			<div className='bounce'/>
+		</div>
+
+	);
 };
 
 export default App;
