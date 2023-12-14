@@ -7,7 +7,7 @@ let Header = ({ header, setCurrentLanguage }) => {
 
 	let activeButton = activeMode ? `${ styles.toggle } ${ styles.toggleLines } ${ styles.active }` : `${ styles.toggle } ${ styles.toggleLines }`;
 
-	let showHideMenu = () => {
+	let showHideBurgerMenu = () => {
 		activeMode
 			? document.querySelector('#menu').style.display = 'none'
 			: document.querySelector('#menu').style.display = 'flex';
@@ -16,7 +16,7 @@ let Header = ({ header, setCurrentLanguage }) => {
 	return (
 		<div className={ styles.header }>
 			<div className={ styles.container }>
-				<div className={ styles.language }>
+				<div className={ styles.languageBlock }>
 					<button onClick={ () => setCurrentLanguage('ru') }>ru</button>
 					<button onClick={ () => setCurrentLanguage('en') }>en</button>
 				</div>
@@ -27,19 +27,19 @@ let Header = ({ header, setCurrentLanguage }) => {
 				</div>
 				<button className={ activeButton } onClick={ () => {
 					setActiveMode(!activeMode);
-					showHideMenu()
+					showHideBurgerMenu()
 				} }><span></span></button>
-				<div className={ styles.headerMenu } id='menu'>
-					<div className={ styles.menuBlocks }>
-						<div className={ styles.menuItem }>
+				<div className={ styles.burgerMenu } id='menu'>
+					<div className={ styles.burgerMenuBlocks }>
+						<div className={ styles.burgerMenuItem }>
 							{ header.map(item => {
 								return <a key={ item.id } href={ item.anchor } className={ styles.link } onClick={ () => {
 									setActiveMode(!activeMode);
-									showHideMenu()
+									showHideBurgerMenu()
 								} }>{ item.link }</a>
 							}) }
 						</div>
-						<div className={ styles.menuLanguage }>
+						<div className={ styles.burgerLanguageBlock }>
 							<button onClick={ () => setCurrentLanguage('ru') }>ru</button>
 							<button onClick={ () => setCurrentLanguage('en') }>en</button>
 						</div>

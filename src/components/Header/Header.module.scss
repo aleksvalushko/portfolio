@@ -19,7 +19,7 @@
   }
 }
 
-.language {
+.languageBlock {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -167,7 +167,7 @@
   }
 }
 
-.headerMenu {
+.burgerMenu {
   height: 470px;
   background-color: #041230;
   display: none;
@@ -180,7 +180,7 @@
   }
 }
 
-.menuBlocks {
+.burgerMenuBlocks {
   position: absolute;
   top: 250px;
   width: 70%;
@@ -189,14 +189,14 @@
   justify-content: space-between;
 }
 
-.menuItem {
+.burgerMenuItem {
   display: flex;
   flex-direction: column;
   line-height: 2.5;
   position: absolute;
 }
 
-.menuLanguage {
+.burgerLanguageBlock {
   display: flex;
   width: 20%;
   height: 30px;
