@@ -7,7 +7,7 @@ let Header = ({ header, setCurrentLanguage }) => {
 
 	let activeButton = activeMode ? `${ styles.toggle } ${ styles.toggleLines } ${ styles.active }` : `${ styles.toggle } ${ styles.toggleLines }`;
 
-	let headerMenu = () => {
+	let showHideMenu = () => {
 		activeMode
 			? document.querySelector('#menu').style.display = 'none'
 			: document.querySelector('#menu').style.display = 'flex';
@@ -17,8 +17,8 @@ let Header = ({ header, setCurrentLanguage }) => {
 		<div className={ styles.header }>
 			<div className={ styles.container }>
 				<div className={ styles.language }>
-					<button onClick={ () => setCurrentLanguage('ru')}>ru</button>
-					<button onClick={ () => setCurrentLanguage('en')}>en</button>
+					<button onClick={ () => setCurrentLanguage('ru') }>ru</button>
+					<button onClick={ () => setCurrentLanguage('en') }>en</button>
 				</div>
 				<div className={ styles.nav }>
 					{ header.map(item => {
@@ -27,7 +27,7 @@ let Header = ({ header, setCurrentLanguage }) => {
 				</div>
 				<button className={ activeButton } onClick={ () => {
 					setActiveMode(!activeMode);
-					headerMenu()
+					showHideMenu()
 				} }><span></span></button>
 				<div className={ styles.headerMenu } id='menu'>
 					<div className={ styles.menuBlocks }>
@@ -35,13 +35,13 @@ let Header = ({ header, setCurrentLanguage }) => {
 							{ header.map(item => {
 								return <a key={ item.id } href={ item.anchor } className={ styles.link } onClick={ () => {
 									setActiveMode(!activeMode);
-									headerMenu()
+									showHideMenu()
 								} }>{ item.link }</a>
 							}) }
 						</div>
 						<div className={ styles.menuLanguage }>
-							<button onClick={ () => setCurrentLanguage('ru')}>ru</button>
-							<button onClick={ () => setCurrentLanguage('en')}>en</button>
+							<button onClick={ () => setCurrentLanguage('ru') }>ru</button>
+							<button onClick={ () => setCurrentLanguage('en') }>en</button>
 						</div>
 					</div>
 				</div>
