@@ -1,32 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
-class TypedReact extends React.Component {
-    componentDidMount() {
-        const {strings} = this.props;
+const TypedReact = ({ strings }) => {
+
+    const typeTarget = useRef(null);
+
+    useEffect(() => {
         const options = {
             strings: strings,
             typeSpeed: 80,
             backSpeed: 50,
             showCursor: false
         };
-        this.typed = new Typed(this.el, options);
-    }
+        const typed = new Typed(typeTarget.current, options);
 
-    /*
-        componentWillUnmount() {
-            this.typed.destroy();
-        }*/
+        return () => {
+            typed.destroy();
+        };
+    }, [strings]);
 
-    render() {
-        return (
-            <span
-                ref={(el) => {
-                    this.el = el;
-                }}
-            />
-        );
-    }
+    return (
+      <span
+        ref={typeTarget}
+      />
+    );
 }
 
 export default TypedReact;
