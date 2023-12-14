@@ -12,56 +12,51 @@ let AboutMe = ({aboutMe}) => {
         <Fade bottom>
             <div className={styles.aboutMe} id='aboutMe'>
                 <div className={styles.container}>
-                    <div className={styles.aboutMeTitle}>
+                    <div className={styles.title}>
                         {aboutMe.title}
                         <span>{aboutMe.underTitle}</span>
                     </div>
-                    <div className={styles.aboutMeDescriptionBlock}>
-                        <div className={styles.aboutMeDescription}>
-                            <h4 className={styles.aboutMeDescriptionTitle}>
+                    <div className={styles.descriptionBlock}>
+                        <div className={styles.description}>
+                            <h4 className={styles.descriptionTitle}>
                                 {aboutMe.descriptionTitle.firstElement}
                                 <span><TypedReact strings={[text[0], text[1], text[2]]}/>.</span>
                             </h4>
-                            <p className={styles.aboutMeDescriptionText}>
+                            <p className={styles.descriptionText}>
                                 {aboutMe.descriptionText.firstPart}
                                 <span>{aboutMe.descriptionText.secondPart}</span>
                                 {aboutMe.descriptionText.thirdPart}
                             </p>
-                            <div className={styles.aboutMeInformation}>
-                                <div className={styles.aboutMeInformationBlock}>
-                                    <div className={styles.aboutMeInformationElement1}>
-                                        {aboutMe.information.informationTitle1.map(el => {
-                                                return <div key={el.id}>{el.title}</div>
+                            <div className={styles.information}>
+                                <div className={styles.informationBlocks}>
+                                    <div className={styles.informationBlock}>
+                                        {aboutMe.information.blockWithInformation1.map(el => {
+                                                return <div key={el.id} className={styles.blockWithInformation}>
+                                                    <div>{el.title}</div>
+                                                    <div>{el.text}</div>
+                                                </div>
                                             }
                                         )}
                                     </div>
-                                    <div className={styles.aboutMeInformationElement2}>
-                                        {aboutMe.information.informationText1.map(el => {
-                                                return <div key={el.id}>{el.text}</div>
-                                            }
-                                        )}
-                                    </div>
-                                    <div className={styles.aboutMeInformationElement1}>
-                                        {aboutMe.information.informationTitle2.map(el => {
-                                                return <div key={el.id}>{el.title}</div>
-                                            }
-                                        )}
-                                    </div>
-                                    <div className={styles.aboutMeInformationElement2}>
-                                        {aboutMe.information.informationText2.map(el => {
-                                                return <div key={el.id}>{el.text}</div>
+                                    <div className={styles.informationBlock}>
+                                        {aboutMe.information.blockWithInformation2.map(el => {
+                                            return <div key={el.id} className={styles.blockWithInformation}>
+                                                <div>{el.title}</div>
+                                                <div>{el.text}</div>
+                                            </div>
                                             }
                                         )}
                                     </div>
                                 </div>
-                                <div className={styles.aboutMeButtons}>
-                                    <button className={styles.aboutMeDownloadCVButton}>
-                                        {aboutMe.title === 'ABOUT ME'
-                                        ? <Link to="./CV_26_11_2020_Eng.pdf" target='_blank' download>{aboutMe.buttons.first}</Link>
-                                        : <Link to="./CV_26_11_2020.pdf" target='_blank' download>{aboutMe.buttons.first}</Link>}
+                                <div className={styles.buttons}>
+                                    <button className={styles.downloadCVButton}>
+                                        <Link to="./CV_26_11_2020_Eng.pdf" target='_blank' download>{aboutMe.buttons.downloadEngCVButton}</Link>
                                     </button>
-                                    <button className={styles.aboutMeSendMessageButton}>
-                                        <a href={aboutMe.anchor}>{aboutMe.buttons.second}</a>
+                                    <button className={styles.downloadCVButton}>
+                                        <Link to="./CV_26_11_2020.pdf" target='_blank' download>{aboutMe.buttons.downloadRusCVButton}</Link>
+                                    </button>
+                                    <button className={styles.sendMessageButton}>
+                                        <a href={aboutMe.anchor}>{aboutMe.buttons.sendMessageButton}</a>
                                     </button>
                                 </div>
                             </div>
