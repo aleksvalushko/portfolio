@@ -80,7 +80,7 @@ const en = {
 				},
 				{
 					id: 2,
-					title: 'Interests:',
+					title: 'Hobby:',
 					text: 'Football, Good movies'
 				},
 				{
@@ -91,8 +91,7 @@ const en = {
 			]
 		},
 		buttons: {
-			downloadEngCVButton: 'Download CV (Eng)',
-			downloadRusCVButton: 'Download CV (Rus)',
+			downloadCVButton: 'Download CV',
 			sendMessageButton: 'Send Message'
 		},
 		anchor: '#contacts'
@@ -254,7 +253,7 @@ const ru = {
 				},
 				{
 					id: 2,
-					title: 'Интересы:',
+					title: 'Хобби:',
 					text: 'Футбол, Хорошее кино'
 				},
 				{
@@ -265,8 +264,7 @@ const ru = {
 			]
 		},
 		buttons: {
-			downloadEngCVButton: 'Загрузить резюме (Eng)',
-			downloadRusCVButton: 'Загрузить резюме (Rus)',
+			downloadCVButton: 'Загрузить резюме',
 			sendMessageButton: 'Отправить сообщение'
 		},
 		anchor: '#contacts'
@@ -383,7 +381,8 @@ const LanguageProvider = ({ children }) => {
 
 	const languageData = {
 		setCurrentLanguage,
-		selectedTranslation
+		selectedTranslation,
+		currentLanguage
 	};
 
 	return <LanguageContext.Provider value={ languageData }>{ children }</LanguageContext.Provider>;
