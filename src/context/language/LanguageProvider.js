@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { birthDateToAge, declOfNum } from "../../components/helpers";
 import facebook from "../../images/facebook.svg";
 import github from "../../images/github.svg";
 import linkedIn from "../../images/linkedin.svg";
@@ -47,69 +48,46 @@ const en = {
 			and learn new technologies. Worked with both maintaining old projects and adding new functionality to them, as well as creating new projects.`
 		},
 		information: {
-			informationTitle1:
+			blockWithInformation1:
 				[
 					{
 						id: 1,
-						title: 'Birthday:'
-					},
-					{
-						id: 2,
-						title: 'City:'
-					},
-					{
-						id: 3,
-						title: 'Degree:'
-					}
-				],
-			informationTitle2: [
-				{
-					id: 1,
-					title: 'Age:'
-				},
-				{
-					id: 2,
-					title: 'Interests:'
-				},
-				{
-					id: 3,
-					title: 'Study:'
-				}
-			],
-			informationText1:
-				[
-					{
-						id: 1,
+						title: 'Birthday:',
 						text: '14.03.1993'
 					},
 					{
 						id: 2,
+						title: 'City:',
 						text: 'Minsk, Belarus'
 					},
 					{
 						id: 3,
+						title: 'Degree:',
 						text: 'Higher'
 					}
 				],
-			informationText2: [
+			blockWithInformation2: [
 				{
 					id: 1,
-					text: '29 years'
+					title: 'Age:',
+					text: `${ birthDateToAge('1993-03-14') } years`
 				},
 				{
 					id: 2,
+					title: 'Interests:',
 					text: 'Football, Good movies'
 				},
 				{
 					id: 3,
-					text: 'Military Academy'
+					title: 'Study:',
+					text: 'Military Academy of the Republic of Belarus'
 				}
 			]
 		},
 		buttons: {
-			first: 'Download CV',
-			second:
-				'Send Message'
+			downloadEngCVButton: 'Download CV (Eng)',
+			downloadRusCVButton: 'Download CV (Rus)',
+			sendMessageButton: 'Send Message'
 		},
 		anchor: '#contacts'
 	},
@@ -238,69 +216,46 @@ const ru = {
 			идобавлением в них нового функционала, так и с созданием новых проектов.`
 		},
 		information: {
-			informationTitle1:
+			blockWithInformation1:
 				[
 					{
 						id: 1,
-						title: 'День рождения:'
-					},
-					{
-						id: 2,
-						title: 'Город:'
-					},
-					{
-						id: 3,
-						title: 'Образование:'
-					}
-				],
-			informationTitle2: [
-				{
-					id: 1,
-					title: 'Возраст:'
-				},
-				{
-					id: 2,
-					title: 'Интересы:'
-				},
-				{
-					id: 3,
-					title: 'ВУЗ:'
-				}
-			],
-			informationText1:
-				[
-					{
-						id: 1,
+						title: 'День рождения:',
 						text: '14.03.1993'
 					},
 					{
 						id: 2,
+						title: 'Город:',
 						text: 'Минск, Беларусь'
 					},
 					{
 						id: 3,
+						title: 'Образование:',
 						text: 'Высшее'
 					}
 				],
-			informationText2: [
+			blockWithInformation2: [
 				{
 					id: 1,
-					text: '29 лет'
+					title: 'Возраст:',
+					text: declOfNum(birthDateToAge('1993-03-14'), ['год', 'года', 'лет'])
 				},
 				{
 					id: 2,
+					title: 'Интересы:',
 					text: 'Футбол, Хорошее кино'
 				},
 				{
 					id: 3,
+					title: 'ВУЗ:',
 					text: 'Военная Академия Республики Беларусь'
 				}
 			]
 		},
 		buttons: {
-			first: 'Загрузить резюме',
-			second:
-				'Отправить сообщение'
+			downloadEngCVButton: 'Загрузить резюме (Eng)',
+			downloadRusCVButton: 'Загрузить резюме (Rus)',
+			sendMessageButton: 'Отправить сообщение'
 		},
 		anchor: '#contacts'
 	},

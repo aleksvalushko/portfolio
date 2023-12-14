@@ -12,6 +12,7 @@
 .container {
   width: 80%;
   height: 100%;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,7 +23,7 @@
   }
 }
 
-.aboutMeTitle {
+.title {
   @include blocksTitle;
   margin-bottom: 10%;
   @media screen and (max-width: 1024px) {
@@ -33,7 +34,7 @@
   }
 }
 
-.aboutMeDescriptionBlock {
+.descriptionBlock {
   width: 100%;
   height: 100%;
   display: flex;
@@ -44,14 +45,14 @@
   }
 }
 
-.aboutMeDescription {
+.description {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
 }
 
-.aboutMeDescriptionTitle {
+.descriptionTitle {
   margin: 0;
   font-weight: 500;
   font-size: 20px;
@@ -60,12 +61,12 @@
   }
 }
 
-.aboutMeDescriptionText {
+.descriptionText {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.5px;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 5%;
   text-align: justify;
   span {
@@ -74,107 +75,85 @@
   }
 }
 
-.aboutMeInformation {
+.information {
   display: flex;
   flex-direction: column;
 }
 
-.aboutMeInformationBlock {
+.informationBlocks {
   display: flex;
   justify-content: space-around;
   margin-bottom: 5%;
   line-height: 2;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 15px;
   width: 100%;
-  @media screen and (max-width: 1200px) {
-    font-size: 11px;
-  }
-  @media screen and (max-width: 1050px) {
-    font-size: 10px;
-  }
-  @media screen and (max-width: 1000px) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: 900px) {
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
     font-size: 13px;
   }
-  @media screen and (max-width: 800px) {
-    font-size: 11px;
-  }
-  @media screen and (max-width: 700px) {
-    font-size: 9px;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 8px;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 7px;
-  }
-  @media screen and (max-width: 400px) {
-    font-size: 6px;
-  }
-  @media screen and (max-width: 350px) {
-    font-size: 5px;
-  }
 }
 
-.aboutMeInformationElement1 {
-  display: flex;
-  flex-direction: column;
-  font-weight: 600;
-  width: 40%;
-}
-
-.aboutMeInformationElement2 {
+.informationBlock {
   width: 50%;
-}
 
-.aboutMeButtons {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 1200px) {
-    width: 65%;
-  }
-  @media screen and (max-width: 1100px) {
-    width: 70%;
-  }
-  @media screen and (max-width: 1024px) {
-    width: 75%;
-  }
-  @media screen and (max-width: 1000px) {
-    width: 50%;
-  }
-  @media screen and (max-width: 900px) {
-    width: 60%;
-  }
-  @media screen and (max-width: 800px) {
-    width: 65%;
-  }
-  @media screen and (max-width: 700px) {
-    width: 70%;
-  }
-  @media screen and (max-width: 650px) {
-    width: 80%;
-  }
-  @media screen and (max-width: 570px) {
-    width: 90%;
-  }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 }
 
-.aboutMeDownloadCVButton, .aboutMeSendMessageButton {
+.blockWithInformation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 2.5;
+
+  div {
+    flex: 1 0 50%;
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      font-weight: 600;
+    }
+  }
+}
+
+.buttons {
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 348px) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.downloadCVButton, .sendMessageButton {
   border: none;
   background: transparent;
+  margin: 10px 0;
+
   a {
     text-decoration: none;
     color: white;
+    padding: 0 10px;
     @include button;
+
+    &:hover {
+      @include buttonHover;
+    }
   }
-  &:hover {
-    @include buttonHover;
+
+  @media screen and (max-width: 1200px) {
+    margin: 10px;
   }
 }
