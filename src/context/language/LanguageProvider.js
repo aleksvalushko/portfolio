@@ -1,18 +1,24 @@
 import React, { useMemo, useState } from 'react';
 import { birthDateToAge, declOfNum } from "../../components/helpers";
+import js from "../../images/skills/JavaScript.svg";
+import react from "../../images/skills/React.svg";
+import redux from "../../images/skills/Redux.svg";
+import vue from "../../images/skills/Vue.svg";
+import vuex from "../../images/skills/Vuex.svg";
+import html5 from "../../images/skills/HTML5.svg";
+import sass from "../../images/skills/SASS.svg";
+import typescript from "../../images/skills/TypeScript.svg";
+import nuxt from "../../images/skills/Nuxt.svg";
+import keycloak from "../../images/skills/Keycloak.svg";
+import antd from "../../images/skills/Antd.svg";
+import vuetify from "../../images/skills/Vuetify.svg";
+import materialUI from "../../images/skills/MaterialUI.svg";
+import git from "../../images/skills/Git.svg";
+import json from "../../images/skills/JSON.svg";
+import jira from "../../images/skills/Jira.svg";
 import facebook from "../../images/facebook.svg";
 import github from "../../images/github.svg";
 import linkedIn from "../../images/linkedin.svg";
-import css3 from "../../images/skills/css3.svg";
-import github2 from "../../images/skills/github.svg";
-import html5 from "../../images/skills/html5.svg";
-import js from "../../images/skills/js6.svg";
-import json from "../../images/skills/json.svg";
-import react from "../../images/skills/react.svg";
-import redux from "../../images/skills/redux.svg";
-import sass from "../../images/skills/sass.svg";
-import typescript from "../../images/skills/typescript.svg";
-import vue from "../../images/skills/vue.svg";
 import twitter from "../../images/twitter.svg";
 import LanguageContext from './LanguageContext';
 import { EN, RU } from '../../contants';
@@ -95,15 +101,21 @@ const en = {
 		title: 'SKILLS',
 		skillsArray: [
 			{ id: 1, title: 'Java Script', alt: 'js', image: js },
-			{ id: 2, title: 'Vue 2', alt: 'vue', image: vue },
-			{ id: 3, title: 'HTML 5', alt: 'html5', image: html5 },
-			{ id: 4, title: 'CSS 3', alt: 'css3', image: css3 },
-			{ id: 5, title: 'SASS', alt: 'sass', image: sass },
-			{ id: 6, title: 'React', alt: 'react', image: react },
-			{ id: 7, title: 'Redux', alt: 'store', image: redux },
-			{ id: 8, title: 'JSON', alt: 'json', image: json },
-			{ id: 9, title: 'GitHub', alt: 'github', image: github2 },
-			{ id: 10, title: 'TypeScript', alt: 'typescript', image: typescript }
+			{ id: 2, title: 'React', alt: 'react', image: react },
+			{ id: 3, title: 'Redux', alt: 'store', image: redux },
+			{ id: 4, title: 'Vue', alt: 'vue', image: vue },
+			{ id: 5, title: 'VueX', alt: 'vuex', image: vuex },
+			{ id: 6, title: 'HTML 5', alt: 'html5', image: html5 },
+			{ id: 7, title: 'SASS', alt: 'sass', image: sass },
+			{ id: 8, title: 'TypeScript', alt: 'typescript', image: typescript },
+			{ id: 9, title: 'Nuxt', alt: 'nuxt', image: nuxt },
+			{ id: 10, title: 'Keycloak', alt: 'keycloak', image: keycloak },
+			{ id: 11, title: 'Ant design', alt: 'antd', image: antd },
+			{ id: 12, title: 'Vuetify', alt: 'vuetify', image: vuetify },
+			{ id: 13, title: 'Material UI', alt: 'material-ui', image: materialUI },
+			{ id: 14, title: 'Git', alt: 'git', image: git },
+			{ id: 15, title: 'JSON', alt: 'json', image: json },
+			{ id: 16, title: 'JIRA', alt: 'jira', image: jira }
 		]
 	},
 	projects: {
@@ -263,15 +275,21 @@ const ru = {
 		title: 'СКИЛЛЫ',
 		skillsArray: [
 			{ id: 1, title: 'Java Script', alt: 'js', image: js },
-			{ id: 2, title: 'Vue 2', alt: 'vue', image: vue },
-			{ id: 3, title: 'HTML 5', alt: 'html5', image: html5 },
-			{ id: 4, title: 'CSS 3', alt: 'css3', image: css3 },
-			{ id: 5, title: 'SASS', alt: 'sass', image: sass },
-			{ id: 6, title: 'React', alt: 'react', image: react },
-			{ id: 7, title: 'Redux', alt: 'store', image: redux },
-			{ id: 8, title: 'JSON', alt: 'json', image: json },
-			{ id: 9, title: 'GitHub', alt: 'github', image: github2 },
-			{ id: 10, title: 'TypeScript', alt: 'typescript', image: typescript }
+			{ id: 2, title: 'React', alt: 'react', image: react },
+			{ id: 3, title: 'Redux', alt: 'store', image: redux },
+			{ id: 4, title: 'Vue', alt: 'vue', image: vue },
+			{ id: 5, title: 'VueX', alt: 'vuex', image: vuex },
+			{ id: 6, title: 'HTML 5', alt: 'html5', image: html5 },
+			{ id: 7, title: 'SASS', alt: 'sass', image: sass },
+			{ id: 8, title: 'TypeScript', alt: 'typescript', image: typescript },
+			{ id: 9, title: 'Nuxt', alt: 'nuxt', image: nuxt },
+			{ id: 10, title: 'Keycloak', alt: 'keycloak', image: keycloak },
+			{ id: 11, title: 'Ant design', alt: 'antd', image: antd },
+			{ id: 12, title: 'Vuetify', alt: 'vuetify', image: vuetify },
+			{ id: 13, title: 'Material UI', alt: 'material-ui', image: materialUI },
+			{ id: 14, title: 'Git', alt: 'git', image: git },
+			{ id: 15, title: 'JSON', alt: 'json', image: json },
+			{ id: 16, title: 'JIRA', alt: 'jira', image: jira }
 		]
 	},
 	projects: {
