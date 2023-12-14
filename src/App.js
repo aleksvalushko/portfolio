@@ -12,7 +12,7 @@ import useLanguage from "./context/language/useLanguage";
 
 let App = () => {
 
-	const { selectedTranslation, setCurrentLanguage } = useLanguage();
+	const { selectedTranslation, setCurrentLanguage, currentLanguage } = useLanguage();
 
 	let [isLoading, setLoading] = useState(false);
 
@@ -22,9 +22,9 @@ let App = () => {
 
 	return (
 		isLoading ? <div className='App'>
-			<Header header={ selectedTranslation.header } setCurrentLanguage={setCurrentLanguage} />
+			<Header header={ selectedTranslation.header } setCurrentLanguage={ setCurrentLanguage }/>
 			<Main main={ selectedTranslation.main }/>
-			<AboutMe aboutMe={ selectedTranslation.aboutMe }/>
+			<AboutMe aboutMe={ selectedTranslation.aboutMe } currentLanguage={ currentLanguage }/>
 			<Skills skills={ selectedTranslation.skills }/>
 			<Projects projects={ selectedTranslation.projects }/>
 			<Slogan slogan={ selectedTranslation.slogan }/>
