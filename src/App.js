@@ -21,7 +21,7 @@ let App = () => {
 	}, []);
 
 	return (
-		isLoading ? <div className='App'>
+		isLoading ? <div className='app'>
 			<Header header={ selectedTranslation.header } setCurrentLanguage={ setCurrentLanguage }/>
 			<Main main={ selectedTranslation.main }/>
 			<AboutMe aboutMe={ selectedTranslation.aboutMe } currentLanguage={ currentLanguage }/>
@@ -30,7 +30,7 @@ let App = () => {
 			<Slogan slogan={ selectedTranslation.slogan }/>
 			<Contacts contacts={ selectedTranslation.contacts }/>
 			<Footer footer={ selectedTranslation.footer }/>
-		</div> : <div className='ApselectedTranslationpWrapper'>
+		</div> : <div className='appWrapper'>
 			<div className='bounce'/>
 		</div>
 

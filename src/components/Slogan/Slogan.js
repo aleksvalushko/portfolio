@@ -7,9 +7,9 @@ let Slogan = ({slogan}) => {
     <div className={styles.articles}>
       <Fade bottom>
           <div className={styles.container}>
-              <div className={styles.articlesMainBlock}>
-                  <div className={styles.articlesTitle}>{slogan.title}</div>
-                  <button className={styles.articlesButton}><a href={slogan.anchor}>{slogan.button}</a></button>
+              <div className={styles.mainBlock}>
+                  <div className={styles.title}>{slogan.title}</div>
+                  <button className={styles.anchor}><a href={slogan.anchor}>{slogan.button}</a></button>
               </div>
           </div>
       </Fade>
