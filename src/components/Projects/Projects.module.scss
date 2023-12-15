@@ -1,7 +1,6 @@
 @import '../variables';
 
 .projects {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 5% 0;
@@ -9,15 +8,16 @@
 
 .container {
   width: 80%;
-  height: 100%;
   display: flex;
+  max-width: 1280px;
   flex-direction: column;
+
   @media screen and (max-width: 600px) {
     width: 96%;
   }
 }
 
-.projectsMainBlock {
+.mainBlock {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,23 +25,20 @@
   align-content: space-around;
 }
 
-.projectsTitle {
+.title {
   @include blocksTitle;
-  margin-bottom: 10%;
-  @media screen and (max-width: 600px) {
-    margin-bottom: 15%;
-  }
 }
 
-.projectsItems {
+.items {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 5% 0;
   text-decoration: none;
-  @media screen and (max-width: 800px) {
+  gap: 50px;
+
+  @media screen and (max-width: 1210px) {
     flex-direction: column;
     justify-content: center;
     align-content: space-around;
@@ -49,45 +46,60 @@
 }
 
 
-.projectsItemImage {
+.itemImage {
   background-color: #f6f7fd;
   border: 5px solid gray;
   position: relative;
-  height: 450px;
   width: 450px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   color: black;
   text-decoration: none;
-  margin-bottom: 10%;
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 25%;
+
+    &:hover {
+      color: #E3872D;
+      transition: color .3s ease-in-out;
+    }
+
+    &:after {
+      background-color: #E3872D;
+      height: 2px;
+      content: '';
+      width: 0;
+      display: block;
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover:after, &:focus:after {
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+
+    .top {
+      transform: rotateX(-180deg);
+    }
+  }
+
   @media screen and (max-width: 600px) {
     height: 300px;
     width: 300px;
-    h2 {
-      font-weight: 700;
-      font-size: 30px;
-      margin-top: 25%;
-      &:hover {
-        color: #E3872D;
-      }
-      h2:after {
-        background-color: #E3872D;
-        height: 2px;
-        content: '';
-        width: 0;
-        display: block;
-        transition: width .3s ease-in-out;
-        &:hover:after, &:focus:after {
-          width: 100%;
-        }
-      }
-    }
   }
 }
 
 .top {
+  width: 100%;
   height: 50%;
   transition: all .8s ease-out;
   transform: rotateX(0deg);
@@ -95,7 +107,6 @@
   transform-style: preserve-3d;
   position: absolute;
   top: 0;
-  width: 100%;
   z-index: 10;
 }
 
@@ -104,49 +115,52 @@
   position: absolute;
 }
 
-.projectsItemImage:hover {
-  color: black;
-  text-decoration: none;
-}
-
-.projectsItemImage:hover .top {
-  transform: rotateX(-180deg);
-}
-
 .front1 {
-  background: url('../../images/todolist.png');
+  background: url('../../images/projects/todolist.png');
   @include projectsFront;
 }
 
 .front2 {
-  background: url('../../images/SocialNetwork.png');
+  background: url('../../images/projects/socialNetwork.png');
   @include projectsFront;
 }
 
 .front3 {
-  background: url('../../images/rabbitGame.png');
+  background-image: url('../../images/projects/rabbitGame.png');
   @include projectsFront;
 }
 
 .front4 {
-  background-image: url('../../images/rockScissorsAndPaper.png');
+  background-image: url('../../images/projects/rockScissorsAndPaper.png');
   @include projectsFront;
   background-size: 120%;
-  background-position: 40% -29%;
+  background-position: -36px 50px;
+
+  @media screen and (max-width: 600px) {
+    background-position: -24px -245px;
+  }
 }
 
 .front5 {
-  background-image: url('../../images/weather.png');
+  background-image: url('../../images/projects/weather.png');
   @include projectsFront;
-  background-position: 30% 0;
+  background-position: -60px 0;
   background-size: 150%;
+
+  @media screen and (max-width: 600px) {
+    background-position: -50px -312px;
+  }
 }
 
 .front6 {
-  background-image: url('../../images/simpleMovieApp.png');
+  background-image: url('../../images/projects/simpleMovieApp.png');
   @include projectsFront;
-  background-position: 40% -3%;
+  background-position: -27px 5px;
   background-size: 115%;
+
+  @media screen and (max-width: 600px) {
+    background-position: -19px 5px;
+  }
 }
 
 .back {
@@ -160,44 +174,68 @@
 }
 
 .bottom1 {
-  background-image: url('../../images/todolist.png');
+  background-image: url('../../images/projects/todolist.png');
   background-size: 100%;
-  background-position: 0 259.5%;
+  background-position: 0 282px;
   @include projectsBottom;
+
+  @media screen and (max-width: 600px) {
+    background-position: 0 189px;
+  }
 }
 
 .bottom2 {
-  background-image: url('../../images/SocialNetwork.png');
+  background-image: url('../../images/projects/socialNetwork.png');
   background-repeat: no-repeat;
   background-size: 110%;
-  background-position: 0 190%;
+  background-position: 0 -220px;
   @include projectsBottom;
+
+  @media screen and (max-width: 600px) {
+    background-position: 0 -146px;
+  }
 }
 
 .bottom3 {
-  background-image: url('../../images/rabbitGame.png');
+  background-image: url('../../images/projects/rabbitGame.png');
   background-size: 100%;
-  background-position: 0 285%;
+  background-position: 0 245px;
   @include projectsBottom;
+
+  @media screen and (max-width: 600px) {
+    background-position: 0 165px;
+  }
 }
 
 .bottom4 {
-  background-image: url('../../images/rockScissorsAndPaper.png');
+  background-image: url('../../images/projects/rockScissorsAndPaper.png');
   background-size: 120%;
-  background-position: 40% -129%;
+  background-position: -36px -175px;
   @include projectsBottom;
+
+  @media screen and (max-width: 600px) {
+    background-position: -24px -394px;
+  }
 }
 
 .bottom5 {
-  background-image: url('../../images/weather.png');
+  background-image: url('../../images/projects/weather.png');
   background-size: 150%;
-  background-position: 40% 285%;
+  background-position: -100px 245px;
   @include projectsBottom;
+
+  @media screen and (max-width: 600px) {
+    background-position: -70px -460px;
+  }
 }
 
 .bottom6 {
-  background-image: url('../../images/simpleMovieApp.png');
+  background-image: url('../../images/projects/simpleMovieApp.png');
   background-size: 115%;
-  background-position: 40% 306%;
+  background-position: -27px 221px;
   @include projectsBottom;
+
+  @media screen and (max-width: 600px) {
+    background-position: -20px 151px;
+  }
 }

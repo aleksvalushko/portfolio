@@ -8,12 +8,12 @@ let Projects = ({projects}) => {
         <Fade bottom>
             <div className={styles.projects} id='projects'>
                 <div className={styles.container}>
-                    <div className={styles.projectsMainBlock}>
-                        <div className={styles.projectsTitle}>
+                    <div className={styles.mainBlock}>
+                        <div className={styles.title}>
                             {projects.title}
                             <span>{projects.underTitle}</span>
                         </div>
-                        <div className={styles.projectsItems}>
+                        <div className={styles.items}>
                             {projects.project.map(el => <Project key={el.id} project={el}/>)}
                         </div>
                     </div>
