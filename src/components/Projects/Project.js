@@ -37,7 +37,7 @@ function Project({project}) {
 
     return (
         <div>
-            <a href={project.link} className={styles.projectsItemImage}>
+            <a href={project.link} className={styles.itemImage} target='_blank' rel="noopener noreferrer">
                 <h2>{project.title}</h2>
                 <div className={styles.top}>
                     <div className={`${front} ${styles.face}`}/>
