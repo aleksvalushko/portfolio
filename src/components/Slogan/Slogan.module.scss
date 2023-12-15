@@ -1,48 +1,50 @@
 @import '../variables';
 
 .articles {
-  height: 35vh;
+  min-height: 200px;
   background-color: #f6f7fd;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
   width: 80%;
+  max-width: 1280px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media screen and (max-width: 600px) {
     width: 96%;
   }
 }
 
-.articlesMainBlock {
+.mainBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.articlesTitle {
+.title {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10%;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 600px) {
-    font-size: 20px;
-  }
 }
 
-.articlesButton {
+.anchor {
   border: none;
   background: transparent;
+
   a {
     @include button;
     text-decoration: none;
     color: white;
+
     &:hover {
       @include buttonHover;
     }
