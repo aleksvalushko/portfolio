@@ -3,7 +3,7 @@ import styles from './Main.module.scss';
 import TypedReact from "../Typed/Typed";
 import doubleArrowDown from '../../images/doubleArrowDown.svg';
 
-let Main = ({main}) => {
+const Main = ({main}) => {
 
     let specialize = main.specialize;
     let text = specialize.secondElement;

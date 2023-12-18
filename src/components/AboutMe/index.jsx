@@ -4,7 +4,7 @@ import TypedReact from "../Typed/Typed";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 
-let AboutMe = ({ aboutMe, currentLanguage }) => {
+const AboutMe = ({ aboutMe, currentLanguage }) => {
 
 	let text = aboutMe.descriptionTitle.secondElement;
 

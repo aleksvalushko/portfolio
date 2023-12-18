@@ -3,7 +3,7 @@ import styles from './Projects.module.scss';
 import Fade from "react-reveal/Fade";
 import Project from "./Project";
 
-let Projects = ({projects}) => {
+const Projects = ({projects}) => {
     return (
         <Fade bottom>
             <div className={styles.projects} id='projects'>

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import Fade from "react-reveal/Fade";
 
-let Footer = ({footer}) => {
+const Footer = ({footer}) => {
     return (
         <div className={styles.footer}>
             <Fade bottom>
