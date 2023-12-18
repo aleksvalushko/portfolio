@@ -86,37 +86,39 @@
   cursor: pointer;
   transition: background .3s;
   z-index: 1;
-  @media screen and (max-width: 750px) {
+
+  span {
     display: block;
-    span {
+    position: absolute;
+    background: white;
+    height: 2px;
+    top: 27px;
+    left: 12px;
+    right: 12px;
+    border-radius: 3px;
+
+    &::before, &::after {
+      content: '';
       display: block;
       position: absolute;
-      background: white;
+      width: 100%;
+      left: 0;
+      background-color: white;
       height: 2px;
-      top: 27px;
-      left: 12px;
-      right: 12px;
       border-radius: 3px;
-
-      &::before, &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        background-color: white;
-        height: 2px;
-        border-radius: 3px;
-      }
-
-      &::before {
-        top: 10px;
-      }
-
-      &::after {
-        bottom: 10px;
-      }
     }
+
+    &::before {
+      top: 10px;
+    }
+
+    &::after {
+      bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    display: block;
   }
 }
 

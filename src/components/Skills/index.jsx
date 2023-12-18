@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Skills.module.scss';
 import Fade from "react-reveal/Fade";
 
-let Skills = ({skills}) => {
+const Skills = ({skills}) => {
 
     return (
         <Fade bottom>

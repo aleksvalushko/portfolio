@@ -1,0 +1,32 @@
+@import '../../variables';
+
+.feedbackModal {
+  width: 400px;
+  height: 100px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  background: #f6f7fd;
+  border-radius: 3px;
+  padding: 0 10px;
+  transform: translateX(450px);
+  transition: 2s ease-in-out;
+  @include flex('center', 'center');
+
+  div {
+    margin-right: 30px;
+  }
+
+  img {
+    width: 20%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 250px;
+    height: 70px;
+  }
+}
+
+.show {
+  transform: translateX(-10px);
+}

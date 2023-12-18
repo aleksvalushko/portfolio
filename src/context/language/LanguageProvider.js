@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { birthDateToAge, declOfNum } from "../../components/helpers";
+import { birthDateToAge, declOfNum } from "../../helpers";
 import js from "../../images/skills/JavaScript.svg";
 import react from "../../images/skills/React.svg";
 import redux from "../../images/skills/Redux.svg";
@@ -16,6 +16,8 @@ import materialUI from "../../images/skills/MaterialUI.svg";
 import git from "../../images/skills/Git.svg";
 import json from "../../images/skills/JSON.svg";
 import jira from "../../images/skills/Jira.svg";
+import success from "../../images/success.svg";
+import error from "../../images/error.svg";
 import facebook from "../../images/facebook.svg";
 import github from "../../images/github.svg";
 import linkedIn from "../../images/linkedin.svg";
@@ -41,7 +43,7 @@ const en = {
 	},
 	aboutMe: {
 		title: 'ABOUT ME',
-		underTitle: 'Main information about me',
+		underTitle: 'Index information about me',
 		descriptionTitle: {
 			firstElement: `I'm Aleks Valushko and I'm a `,
 			secondElement: ['HTML/CSS specialist', 'Java Script developer', 'Front-End developer']
@@ -58,19 +60,11 @@ const en = {
 				[
 					{
 						id: 1,
-						title: 'Birthday:',
-						text: '14.03.1993'
+						title: 'Address:',
+						text: 'Belarus, Minsk'
 					},
-					{
-						id: 2,
-						title: 'City:',
-						text: 'Minsk, Belarus'
-					},
-					{
-						id: 3,
-						title: 'Degree:',
-						text: 'Higher'
-					}
+					{ id: 2, title: 'Phone:', text: '+375-33-662-48-22' },
+					{ id: 3, title: 'E-mail:', text: 'aleks.valushko@yandex.ru' }
 				],
 			blockWithInformation2: [
 				{
@@ -80,12 +74,7 @@ const en = {
 				},
 				{
 					id: 2,
-					title: 'Hobby:',
-					text: 'Football, Good movies'
-				},
-				{
-					id: 3,
-					title: 'Study:',
+					title: 'Education:',
 					text: 'Military Academy of the Republic of Belarus'
 				}
 			]
@@ -151,7 +140,7 @@ const en = {
 			{
 				id: 5,
 				title: 'My Weather',
-				text: 'Show your current temperature',
+				text: 'Show your current weather and temperature',
 				link: 'https://aleksvalushko.github.io/my-weather/'
 			},
 			{
@@ -170,19 +159,21 @@ const en = {
 	},
 	contacts: {
 		title: 'CONTACTS',
-		underTitle:
-			'Get in touch with me',
-		content:
-			[
-				{ id: 1, title: 'Address:', text: '16/8 Nemanskaya street, Minsk, Belarus' },
-				{ id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru' }
-			],
-		tel:
-			{
-				title: 'Phone:', number:
-					'+375-33-662-48-22'
-			},
-		button: 'Send'
+		underTitle: 'Get in touch with me',
+		textareaPlaceholder: 'Your message',
+		nameInputPlaceholder: 'Name',
+		introduction: 'Looking for a great developer to join your team? I would love to join you! Email me and we\'ll discuss everything in more detail! Just do this.',
+		validationError: '* field required',
+		invalidEmail: 'invalid E-mail',
+		success: {
+			icon: success,
+			text: 'Your message was successfully sent'
+		},
+		error: {
+			icon: error,
+			text: 'Some error, try again'
+		},
+		sendButton: 'Send'
 	},
 	footer: {
 		author: 'Aleks Valushko',
@@ -231,19 +222,11 @@ const ru = {
 				[
 					{
 						id: 1,
-						title: 'День рождения:',
-						text: '14.03.1993'
+						title: 'Адрес:',
+						text: 'Беларусь, Минск'
 					},
-					{
-						id: 2,
-						title: 'Город:',
-						text: 'Минск, Беларусь'
-					},
-					{
-						id: 3,
-						title: 'Образование:',
-						text: 'Высшее'
-					}
+					{ id: 2, title: 'Phone:', text: '+375-33-662-48-22' },
+					{ id: 3, title: 'E-mail:', text: 'aleks.valushko@yandex.ru' }
 				],
 			blockWithInformation2: [
 				{
@@ -253,12 +236,7 @@ const ru = {
 				},
 				{
 					id: 2,
-					title: 'Хобби:',
-					text: 'Футбол, Хорошее кино'
-				},
-				{
-					id: 3,
-					title: 'ВУЗ:',
+					title: 'Образование:',
 					text: 'Военная Академия Республики Беларусь'
 				}
 			]
@@ -326,7 +304,7 @@ const ru = {
 			{
 				id: 5,
 				title: 'My Weather',
-				text: 'Показывают температуру в текущем регионе пользователя',
+				text: 'Показывают погоду и температуру в текущем регионе пользователя',
 				link: 'https://aleksvalushko.github.io/my-weather/'
 			},
 			{
@@ -345,8 +323,20 @@ const ru = {
 	},
 	contacts: {
 		title: 'КОНТАКТЫ',
-		underTitle:
-			'Связаться со мной',
+		underTitle: 'Связаться со мной',
+		textareaPlaceholder: 'Ваше сообщение',
+		nameInputPlaceholder: 'Имя',
+		introduction: 'Ищете себе в команду отличного разработчика? Я с удовольствием присоединюсь к вам! Напишите мне, и мы обсудим все более детально! Просто сделайте это.',
+		validationError: '* обязательное поле',
+		invalidEmail: 'невалидный E-mail',
+		success: {
+			icon: success,
+			text: 'Ваше сообщение было успешно отправлено'
+		},
+		error: {
+			icon: error,
+			text: 'Ошибка, попробуйте еще раз'
+		},
 		content:
 			[
 				{ id: 1, title: 'Адрес:', text: 'г. Минск, ул. Неманская, д. 16, кв. 8' },
@@ -357,7 +347,7 @@ const ru = {
 				title: 'Телефон:', number:
 					'+375-33-662-48-22'
 			},
-		button: 'Отправить'
+		sendButton: 'Отправить'
 	},
 	footer: {
 		author: 'Алексей Валушко',

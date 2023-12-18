@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://aleksvalushko.github.io/portfolio",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-preloaders": "3.0.3",

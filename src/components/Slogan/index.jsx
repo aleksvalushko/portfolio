@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Slogan.module.scss';
 import Fade from "react-reveal/Fade";
 
-let Slogan = ({slogan}) => {
+const Slogan = ({slogan}) => {
   return (
     <div className={styles.articles}>
       <Fade bottom>

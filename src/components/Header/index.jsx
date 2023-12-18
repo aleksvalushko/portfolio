@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Header.module.scss';
 
-let Header = ({ header, setCurrentLanguage }) => {
+const Header = ({ header, setCurrentLanguage }) => {
 
 	let [activeMode, setActiveMode] = useState(false);
 

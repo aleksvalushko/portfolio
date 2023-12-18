@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Projects.module.scss';
+import styles from './Project.module.scss';
 
-function Project({project}) {
+const Project = ({project}) => {
 
     let front, bottom;
     switch (project.id) {
