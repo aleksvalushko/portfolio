@@ -43,7 +43,7 @@ const en = {
 	},
 	aboutMe: {
 		title: 'ABOUT ME',
-		underTitle: 'Index information about me',
+		underTitle: 'Main information about me',
 		descriptionTitle: {
 			firstElement: `I'm Aleks Valushko and I'm a `,
 			secondElement: ['HTML/CSS specialist', 'Java Script developer', 'Front-End developer']
