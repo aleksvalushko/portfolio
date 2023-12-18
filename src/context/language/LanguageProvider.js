@@ -177,7 +177,7 @@ const en = {
 	},
 	footer: {
 		author: 'Aleks Valushko',
-		copywrite: '© Copyright 2020. All Rights are Reserved.',
+		copyright: '© Copyright 2020 Aleks.',
 		links: [
 			{ id: 1, link: 'https://www.linkedin.com/in/aleksvalushko/', image: linkedIn, alt: 'LinkedIn' },
 			{ id: 2, link: 'https://twitter.com/joker_aleks', image: twitter, alt: 'Twitter' },
@@ -337,21 +337,11 @@ const ru = {
 			icon: error,
 			text: 'Ошибка, попробуйте еще раз'
 		},
-		content:
-			[
-				{ id: 1, title: 'Адрес:', text: 'г. Минск, ул. Неманская, д. 16, кв. 8' },
-				{ id: 2, title: 'E-mail:', text: 'aleks.valushko@yandex.ru' }
-			],
-		tel:
-			{
-				title: 'Телефон:', number:
-					'+375-33-662-48-22'
-			},
 		sendButton: 'Отправить'
 	},
 	footer: {
 		author: 'Алексей Валушко',
-		copywrite: '© Copyright 2020. All Rights are Reserved.',
+		copyright: '© Copyright 2020 Aleks.',
 		links: [
 			{ id: 1, link: 'https://www.linkedin.com/in/aleksvalushko/', image: linkedIn, alt: 'LinkedIn' },
 			{ id: 2, link: 'https://twitter.com/joker_aleks', image: twitter, alt: 'Twitter' },
